@@ -1,0 +1,41 @@
+.navegacion{ 
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    list-style: none;
+    justify-content: space-around;
+
+}
+
+li{
+    font-family: "Oswald", sans-serif;
+}
+a { text-decoration: none;
+color: #000000;
+}
+
+.Banner{
+    height: 200px;
+    display: grid;
+    grid-template-rows: 20% 80%;
+}
+.banner1{
+    width: 100%;
+}
+.topcanciones{
+    font-family: "Oswald", sans-serif;
+}
+.canciones-container{ 
+    display: grid;
+    grid-template-columns: 50% 50%;
+    gap: 10px;
+}
+.titulo-container {
+    display: grid;
+    grid-template-rows: 1fr 1fr 1fr 1fr;
+}
+img{
+    width: 100%;
+}
+p{
+    font-family: "Oswald", sans-serif;
+}
