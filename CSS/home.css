@@ -14,28 +14,34 @@ color: #000000;
 }
 
 .Banner{
-    height: 200px;
+    height: 250px;
     display: grid;
-    grid-template-rows: 20% 80%;
+    grid-template-rows: 15% 70% 15%;
 }
 .banner1{
     width: 100%;
 }
-.topcanciones{
+
+.titulos-top{
     font-family: "Oswald", sans-serif;
 }
-.canciones-container{ 
+.info-container{ 
     display: grid;
     grid-template-columns: 50% 50%;
     gap: 10px;
 }
-.titulo-container {
+.nombres-container {
     display: grid;
     grid-template-rows: 1fr 1fr 1fr 1fr;
+    gap: 40px;
 }
 img{
     width: 100%;
 }
 p{
     font-family: "Oswald", sans-serif;
+}
+
+.footer{
+    list-style: square;
 }
