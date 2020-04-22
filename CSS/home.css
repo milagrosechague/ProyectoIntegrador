@@ -1,48 +1,76 @@
 
-.banner{
-    width: 100%;
-    height: 100vh;
-    background-image: url(../../Imagenes/Banner-1.jpg);
-    background-position: top right;
-    background-repeat: no-repeat;
-    background-size: cover;
-}
-
-.name{
-    color: rgb(0, 0, 0);
-    font-size: 40px;
-    letter-spacing: 7px;
+header ul{
     text-align: center;
-    font-family: "Oswald", sans-serif;
+    align-items: center;
 }
+
+.banner{
+        width: 100%;
+        height: 100vh;
+        background-image: url(../../Imagenes/Banner-1.jpg);
+        background-position: top right;
+        background-repeat: no-repeat;
+        background-size: cover;
+        padding-top: 10px;    
+}
+    
+    
+.name{
+        color: rgb(0, 0, 0);
+        font-size: 40px;
+        letter-spacing: 7px;
+        text-align: center;
+        font-family: "Oswald", sans-serif;
+        
+    }
 .buscador{
-    height: 10vh;
+        height: 10vh;
 }
-
+    
 h2{
-    font-family: "Oswald", sans-serif;
+        font-family: "Oswald", sans-serif;
+        background-color: rgb(230, 147, 40);
+}
+    
+.titulos-top{
+        font-family: "Oswald", sans-serif;
 }
 
-.titulos-top{
-    font-family: "Oswald", sans-serif;
-}
 .info-container{ 
-    display: grid;
-    grid-template-columns: 50% 50%;
-    gap: 10px;
-}
+        display: grid;
+        grid-template-columns: 50% 50%;
+        gap: 10px;
+    }
 .nombres-container {
-    display: grid;
-    grid-template-rows: 1fr 1fr 1fr 1fr;
-    gap: 40px;
+        display: grid;
+        grid-template-rows: 1fr 1fr 1fr 1fr;
+        gap: 40px;
 }
 
 p{
-    font-family: "Oswald", sans-serif;
+        font-size: 100%;
+        font-family: "Oswald", sans-serif;
 }
-
+    
 .footer{
-    list-style: square;
+        list-style: square;
 }
 
-@media (min-width 320px)
+
+@media only screen and (min-width: 768px){
+    
+    .name{
+        font-size: 100px;
+    }
+    h2{
+        font-size: 50px;
+    }
+    p{
+        font-size: 40px;
+    }
+
+}
+
+@media only screen and (min-width: 1024px){
+    
+}
