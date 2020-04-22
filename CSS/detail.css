@@ -1,5 +1,88 @@
-body{
+
+h1{
+    text-align: center;
+    font-family: "Oswald", sans-serif;
+}
+.artista{
     background-image: url(../../Imagenes/background-detail1.jpg);
     background-repeat: no-repeat;
-    background-position: absolute;
+    background-size: cover;
+    padding-top: 0px;
+    margin-top: 0px;
+    height: 500px;
+
+}
+.foto-artista{
+    display: grid;
+    grid-template-columns: 50%;
+    justify-content: center;
+    gap: 0px
+}
+
+.info-artista{
+    margin-top: 10px;
+    padding-left: 30px;
+    display: grid;
+    grid-template-rows: 8vh 18vh 20vh;
+    list-style: none;
+}
+
+.info-imp{
+    text-decoration: underline;
+}
+.info-secu li{
+    text-decoration: none;
+}
+
+
+.billie1{
+    border-radius: 50%;
+}
+
+
+
+@media only screen and (min-width: 768px){
+    h1{
+        font-size: 50px;
+    }
+    .artista{
+        height: 70vh
+    }
+    .perfil-artista{
+        display: grid;
+        grid-template-columns: 50% 50%;
+    }
+    
+    .foto-artista{
+        display: grid;
+        grid-template-columns: 90%;
+    }
+    .info-artista{
+        display: grid;
+        grid-template-rows: 10vh 20vh 25vh;
+    }
+    li{
+        font-size: 30px
+    };
+}
+
+@media only screen and (min-width: 1024px){
+    h1{
+        font-size: 70px;
+    }
+    .artista{
+        height: 90vh;
+        margin-top: 0px;
+    }
+    .foto-artista{
+        display: grid;
+        grid-template-columns: 70%;
+    }
+    .info-artista{
+        display: grid;
+        grid-template-rows: 8vh 17vh 20vh;
+    }
+    li{
+        font-size: 20px ;
+    }
 }

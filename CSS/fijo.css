@@ -6,11 +6,15 @@
 .navegacion{ 
     display: grid;
     grid-template-columns: 1fr 1fr 1fr 1fr;
+    grid-template-rows: 80px;
     list-style: none;
-    justify-content: space-around;
-    margin: auto;
+    margin-bottom: 0px;
     width: 100%;
-   padding: 0%
+    padding-left: 0px;
+    align-items: center;
+}
+.navegacion li{
+    text-align: center;
 }
 
 li{
@@ -20,8 +24,12 @@ a { text-decoration: none;
 color: #000000;
 }
 img{
+    display: block;
     width: 100%;
     border-radius: 20%;
+}
+.logo{
+    height: 100%;
 }
 
 .integrantes{
@@ -31,11 +39,23 @@ img{
 footer{
     display: grid;
     grid-template-columns: 1fr 1fr;
-    padding: 5px;  
+    padding: 5px; 
+}
+footer ul{
+    align-items: center;
+    padding-bottom: 0px;
 }
 
 @media only screen and (min-width: 768px){
-    
+    .navegacion{
+        display: grid;
+        grid-template-rows: 70px;
+    }
+
+    .navegacion .logo{
+        height: 70px;
+        width: 100px;
+    }
     header li{
         font-size: 40px;
     }
@@ -63,28 +83,11 @@ footer{
         display: block;
         padding-left: 0px;
     }
-
-    .contenido{
-        display: grid;
-        grid-template-columns: 1fr 1fr 1fr;
-        gap: 40px
-    }
-
-    .info-container{
-       display: grid;
-       grid-template-rows: 25vh 25vh 25vh 25vh;
-    
-    }
-    .info-container div img {
-        display: block;
-        padding-top: 0px;
-        margin-top: 20px;
-        justify-content: center;
-        align-items: center;
-    }
-    
+ 
     p{
         font-size: 150%;
+
     }
+
 }
 
