@@ -1,0 +1,72 @@
+.container{
+    background-image: url(../../Imagenes/paint4.JPG);
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+}
+
+h1{
+    font-family: "Oswald", sans-serif;
+    text-align: center;
+    font-size: 25px;
+    background-color: rgb(230, 147, 40);
+}
+
+h2{
+    font-family: "Oswald", sans-serif;
+    text-align: center;
+    background-color: rgb(230, 147, 40);
+    
+    
+}
+
+.buscador{
+    background-color: rgba(230, 148, 40, 0);
+    display: block;
+    text-align: center;
+    border-radius: 0px;
+}
+.contenido{
+    display: grid;
+    grid-template-columns: 50% 50%;
+    gap: 20px;
+    grid-template-rows: 40vh 40vh;
+    margin-right: 10px;
+}
+
+img{
+    border-radius: 20%;
+}
+
+@media only screen and (min-width: 768px){
+    h1{
+        font-size: 60px;
+    }
+    .container{
+        height: 125vh;
+        background-image: url(../../Imagenes/paint4.JPG);
+    }
+    h2{
+        font-size: 40px;
+    }
+    .contenido{
+        display: grid;
+        grid-template-rows: 50vh 50vh;
+    }
+}
+
+@media only screen and (min-width: 1024px){
+    h1{
+        font-size: 40px;
+    }
+    .container{
+        height: 90vh;
+        background-image: url(../../Imagenes/paint4.2.jpg);
+    }
+
+    .contenido{
+        display: grid;
+        grid-template-columns: 1fr 1fr 1fr 1fr;
+        gap: 20px;
+    }
+}
