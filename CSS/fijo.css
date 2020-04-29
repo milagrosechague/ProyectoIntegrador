@@ -37,13 +37,21 @@ img{
 }
 
 footer{
+    margin-top: 20px;
     display: grid;
-    grid-template-columns: 1fr 1fr;
-    padding: 5px; 
+    grid-template-columns: 1fr 1fr; 
+    background-color: rgb(230, 147, 40);
 }
 footer ul{
     align-items: center;
-    padding-bottom: 0px;
+    padding-top: 10px;
+}
+
+footer img{
+    display: block;
+    margin-left: 40%;
+    border-radius: 50% 50% 50% 50%;
+    width: 60%;
 }
 
 @media only screen and (min-width: 768px){
@@ -83,10 +91,24 @@ footer ul{
         display: block;
         padding-left: 0px;
     }
+
+    h2{
+        border-radius: 0px;
+    }
  
     p{
         font-size: 150%;
+    }
 
+    footer {
+        height: 33vh;
+        box-sizing: border-box;
+    }
+    footer img{
+        width: 50%;
+    }
+    footer ul{
+        padding-top: 30px;
     }
 
 }

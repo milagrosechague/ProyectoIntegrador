@@ -2,7 +2,7 @@
     background-image: url(../../Imagenes/paint4.JPG);
     background-repeat: no-repeat;
     background-size: cover;
-    background-position: center;
+    background-position: center fixed;
 }
 
 h1{

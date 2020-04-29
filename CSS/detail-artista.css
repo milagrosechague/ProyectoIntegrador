@@ -4,12 +4,9 @@ h1{
     font-family: "Oswald", sans-serif;
 }
 .artista{
-    background-image: url(../../Imagenes/background-detail1.jpg);
-    background-repeat: no-repeat;
-    background-size: cover;
     padding-top: 0px;
     margin-top: 0px;
-    height: 550px;
+    height: 150vh;
 
 }
 .foto-artista{
@@ -21,24 +18,39 @@ h1{
 
 .info-artista{
     margin-top: 10px;
-    padding-left: 30px;
+    padding-left: 20px;
     display: grid;
-    grid-template-rows: 7vh 14vh 15vh;
+    grid-template-rows: 15vh 25vh;
     list-style: none;
 }
 
-.info-imp{
-    text-decoration: underline;
-}
-.info-secu li{
-    text-decoration: none;
+.info-artista li{
+    font-size: 25px;
 }
 
+.canciones-artista li{
+    font-size: 25px;
+}
+
+.canciones-artista li audio{
+    width: 100%;
+}
 
 .billie1{
     border-radius: 50%;
+    border: solid 5px rgb(230, 147, 40);
 }
 
+h2{
+    display: block;
+    text-align: center;
+    background-color: rgb(230, 147, 40);
+}
+
+b{
+    font-family: "Oswald", sans-serif;
+    padding-left: 25px;
+}
 
 
 @media only screen and (min-width: 768px){
@@ -46,11 +58,11 @@ h1{
         font-size: 50px;
     }
     .artista{
-        height: 65vh
+        height: 90vh
     }
     .perfil-artista{
         display: grid;
-        grid-template-columns: 50% 50%;
+        grid-template-columns: 40% 60%;
     }
     
     .foto-artista{
@@ -59,8 +71,13 @@ h1{
     }
     .info-artista{
         display: grid;
-        grid-template-rows: 10vh 20vh 25vh;
+        grid-template-rows: 10vh 20vh;
     }
+    .canciones-artista h2{
+        display: block;
+
+    }
+
     li{
         font-size: 30px
     };
@@ -69,20 +86,31 @@ h1{
 @media only screen and (min-width: 1024px){
     h1{
         font-size: 70px;
+        margin-bottom: 0px;
     }
     .artista{
-        height: 90vh;
+        height: 110vh;
         margin-top: 0px;
     }
     .foto-artista{
         display: grid;
         grid-template-columns: 70%;
+        align-items: center;
     }
     .info-artista{
         display: grid;
-        grid-template-rows: 8vh 17vh 20vh;
+        grid-template-rows: 14vh 27vh;
     }
-    li{
-        font-size: 20px ;
+    .info-artista li{
+        font-size: 35px ;
+    }
+    .canciones-artista li audio{
+        display: flex;
+        justify-content: flex-end;
+    }
+    .canciones-artista li{
+        display: grid;
+        grid-template-columns: 30% 70%;
+        grid-template-rows: 5vh 5vh 5vh;
     }
 }

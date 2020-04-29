@@ -41,14 +41,19 @@ h2{
         grid-template-columns: 50% 50%;
         gap: 10px;
     }
+
+.img-container{
+    display: grid;
+    grid-template-rows: 30vh 30vh 30vh 30vh;
+}
 .nombres-container {
         display: grid;
-        grid-template-rows: 1fr 1fr 1fr 1fr;
-        gap: 40px;
+        grid-template-rows: 30vh 30vh 30vh 30vh;
+        gap: 10px;
 }
 
 p{
-        font-size: 100%;
+        font-size: 30px;
         font-family: "Oswald", sans-serif;
 }
     
@@ -64,6 +69,15 @@ p{
     }
     h2{
         font-size: 50px;
+    }
+    .img-container{
+        display: grid;
+        grid-template-rows: 40vh 40vh 40vh 40vh;
+    }
+    .nombres-container{
+        display: grid;
+        grid-template-rows: 40vh 40vh 40vh 40vh;
+        gap: 10px;
     }
     p{
         font-size: 40px;
@@ -100,7 +114,6 @@ p{
     }
     section h2{
         text-align: center;
-        border-radius: 20%;
         font-size: 40px;
     }
 }
