@@ -1,3 +1,8 @@
+.container{
+    background-image: url(../../Imagenes/music\ notes.jpg);
+    background-position: cover;
+}
+
 h1{
     text-align: center;
     font-family: "Oswald", sans-serif;
@@ -25,7 +30,7 @@ h1{
 }
 
 div i{
-    color: rgb(230, 147, 40);
+    color: #000000;
 }
 
 footer{
@@ -39,21 +44,25 @@ footer{
 i{
     font-family: "Oswald", sans-serif;
     font-size: 30px;
-    color: rgb(230, 147, 40);
+    color: #000000;
 }
 
 .titulos-canciones{
     display: grid;
     grid-template-rows: 10vh 10vh 10vh 10vh 10vh 10vh;
+    align-items: center;
+}
+
+.titulos-canciones .titulo{
+    border-bottom: solid 3px #000000;
+    font-size: 23px;
 }
 
 .canciones-recomendadas ul{
     list-style: none;
 }
 
-.canciones.recomendadas li{
-    font-size: 25px;
-}
+
 
 .titulo{
     display: grid;
@@ -103,6 +112,10 @@ i{
  }
     .canciones-recomendadas{
         display: block
+    }
+
+    .canciones-recomendadas ul li{
+        font-size: 20px;
     }
 
     .track{
