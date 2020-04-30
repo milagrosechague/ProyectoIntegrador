@@ -7,7 +7,7 @@ header ul{
 .banner{
         width: 100%;
         height: 80vh;
-        background-image: url(../../Imagenes/Banner-1.jpg);
+        background-image: url(../imagenes/Banner-1.jpg);
         background-position: top right;
         background-repeat: no-repeat;
         background-size: cover;
@@ -89,7 +89,7 @@ p{
     .banner{
         width: 100%;
         height: 90vh;
-        background-image: url(../../Imagenes/paint5.JPG);
+        background-image: url(../imagenes/paint5.JPG);
         background-position: top right;
         background-repeat: no-repeat;
         background-size: cover;
