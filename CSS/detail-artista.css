@@ -9,7 +9,7 @@ h1{
 .artista{
     padding-top: 0px;
     margin-top: 0px;
-    height: 150vh;
+    height: 180vh;
 
 }
 .foto-artista{
@@ -93,12 +93,16 @@ i{
    padding: auto;
 }
 
+.entrevista{
+    margin-top: 30px;
+}
+
 @media only screen and (min-width: 768px){
     h1{
         font-size: 50px;
     }
     .artista{
-        height: 90vh
+        height: 80vh
     }
     .perfil-artista{
         display: grid;
@@ -114,18 +118,39 @@ i{
         grid-template-rows: 10vh 20vh;
     }
 
+    .detail{
+        display: grid;
+        grid-template-columns: 50% 50%;
+    }
+
     h2 b{ 
-        font-size: 40px;
+        font-size: 30px;
+    }
+
+    .cancion-container{
+        display: grid;
+        grid-template-rows: 10vh 10vh 10vh;
     }
     .cancion img{
-        width: 60%;
-        padding-left: 40px;
+        width: 75%;
+        padding-left: 23px;
     }
     footer {
         margin-top: 170px;
     }
     .titulo p{
-        font-size: 36px;
+        font-size: 35px;
+        margin-top: 20px;
+    }
+    .titulo i{
+        margin-top: -14px;
+    }
+    .entrevista{
+        margin-top: 0px;
+        margin-left: 15px;
+        display: grid;
+        grid-template-rows: 220px 220px;
+        align-items: center;
     }
 }
 
@@ -135,7 +160,7 @@ i{
         margin-bottom: 0px;
     }
     .artista{
-        height: 125vh;
+        height: 120vh;
         margin-top: 0px;
     }
     .foto-artista{
@@ -157,16 +182,36 @@ i{
 
     .cancion{
         display: grid;
-        grid-template-columns: 20% 80%;
+        grid-template-columns: 30% 70%;
     }
     .cancion img{
-        width: 67%;
+        width: 80%;
+        padding-top: 15px;
+    }
+
+    .titulo{
+        display: grid;
+        grid-template-rows: 10vh 6vh;
     }
     .titulo p {
-        padding-top: 0px;
+        padding-top: 12px;
         font-size: 35px;
     }
     .titulo i{
-        margin-top: 20px;
+        margin-top: 0px;
+    }
+
+    .entrevista{
+        margin-top: 25px;
+        margin-left: 30px;
+        margin-right: 0px;
+        display: grid;
+        grid-template-rows: 280px 280px;
+        align-items: center;
+    }
+
+    .entrevista iframe{
+        width: 100%;
+        height: 260px;
     }
 }
