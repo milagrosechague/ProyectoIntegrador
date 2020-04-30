@@ -7,6 +7,7 @@
     <link rel="stylesheet" href="../CSS/generos.css">
     <link href="https://fonts.googleapis.com/css2?family=Oswald:wght@200;400&display=swap" rel="stylesheet">
     <link href="https://fonts.googleapis.com/css2?family=Anton&display=swap" rel="stylesheet">
+    <script src="../CSS/carousel.js"></script>
     <title>Generos</title>
 </head>
 <body>
@@ -23,7 +24,31 @@
              <section>
                 <h2 class="buscador">BUSCADOR</h2>
              </section>
-             <section class="contenido">
+               <section class="carousel">
+                <div class="slideshow-container">
+                <div class="slides fade" style="display: block;">
+                    <img src="../imagenes/gifs carousel/rock.gif" style="width:100%">
+                </div>
+                <div class="slides fade" style="display: none;">
+                    <img src="../imagenes/gifs carousel/pop.gif" style="width:100%">
+                </div>
+                <div class="slides fade" style="display: none;">
+                    <img src="../imagenes/gifs carousel/reggeaton.gif" style="width:100%">
+                </div>  
+                <div class="slides fade" style="display: none;">
+                    <img src="../imagenes/gifs carousel/electronica.gif" style="width:100%">
+                </div> 
+                <a class="prev" onclick="plusSlides(-1)">❮</a>
+                <a class="next" onclick="plusSlides(1)">❯</a>
+                </div>
+                <div style="text-align:center">
+                <span class="dot active" onclick="currentSlide(1)"></span>
+                <span class="dot" onclick="currentSlide(2)"></span>
+                <span class="dot" onclick="currentSlide(3)"></span>
+                <span class="dot" onclick="currentSlide(4)"></span>
+                </div>
+             </section>
+            <section class="contenido">
                 <div>
                     <h2>  ROCK  </h2>
                     <img src="../imagenes/rock.jpg" alt="rock">

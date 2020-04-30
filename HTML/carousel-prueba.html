@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <script src="scripts/dropdown_menu.js"></script>
+    <script src="../CSS/carousel.js"></script>
+    <link rel="stylesheet" href="../CSS/style.css">
+    <title>Document</title>
+</head>
+<body>
+    <div class="slideshow-container">
+        <div class="slides fade" style="display: block;">
+            <img src="../imagenes/blindinglights.jpg" style="width:100%">
+            <div class="text">Blinding Lights, The Weekend</div>
+        </div>
+        <div class="slides fade" style="display: none;">
+            <img src="../imagenes/toosieslide.jpg" style="width:100%">
+            <div class="text">Toosies Slide, Drake</div>
+        </div>
+        <div class="slides fade" style="display: none;">
+            <img src="../imagenes/yummy.jpg" style="width:100%">
+            <div class="text">Yummy, Justin Bieber</div>
+        </div>  
+        <div class="slides fade" style="display: none;">
+            <img src="../imagenes/dontstartnow.jpg" style="width:100%">
+            <div class="text">Don´t Start Now, Dua Lipa</div>
+        </div> 
+        <a class="prev" onclick="plusSlides(-1)">❮</a>
+        <a class="next" onclick="plusSlides(1)">❯</a>
+    </div>
+    <div style="text-align:center">
+        <span class="dot active" onclick="currentSlide(1)"></span>
+        <span class="dot" onclick="currentSlide(2)"></span>
+        <span class="dot" onclick="currentSlide(3)"></span>
+        <span class="dot" onclick="currentSlide(4)"></span>
+    </div>
+</body>
+</html>

@@ -1,9 +1,7 @@
 
-.container{
-    background-image: url(../imagenes/music\ notes.jpg) ;
-    
+body{
+    background-image: url(../imagenes/music\ notes.jpg) ;    
 }
-
 h1{
     text-align: center;
     font-family: "Oswald", sans-serif;
@@ -56,7 +54,44 @@ b{
     font-family: "Oswald", sans-serif;
     padding-left: 25px;
 }
+p{
+    font-family: "Oswald", sans-serif;
+    font-size: 25px;
+}
 
+i{
+    font-family: "Oswald", sans-serif;
+    font-size: 20px;
+    margin-top: 0px;
+}
+
+
+.cancion-container{
+    display: grid;
+    grid-template-rows: 15vh 15vh 15vh;
+    gap: 20px;
+}
+
+.cancion{
+    background-color: rgba(230, 148, 40, 0.719);
+    border-radius: 30px;
+    display: grid;
+    grid-template-columns: 30% 70%;
+    justify-content: center;
+}
+
+.cancion img{
+    display: block;
+    width: 70%;
+    align-items: center;
+    padding: 10px;
+}
+
+.titulo{
+   display: grid;
+   grid-template-rows: 8vh 6vh;
+   padding: auto;
+}
 
 @media only screen and (min-width: 768px){
     h1{
@@ -78,18 +113,19 @@ b{
         display: grid;
         grid-template-rows: 10vh 20vh;
     }
-    .canciones-artista h2{
-        display: block;
-
-    }
-
-    li{
-        font-size: 30px;
-    }
 
     h2 b{ 
-        font-size: 35px;
-
+        font-size: 40px;
+    }
+    .cancion img{
+        width: 60%;
+        padding-left: 40px;
+    }
+    footer {
+        margin-top: 170px;
+    }
+    .titulo p{
+        font-size: 36px;
     }
 }
 
@@ -99,7 +135,7 @@ b{
         margin-bottom: 0px;
     }
     .artista{
-        height: 110vh;
+        height: 125vh;
         margin-top: 0px;
     }
     .foto-artista{
@@ -114,13 +150,23 @@ b{
     .info-artista li{
         font-size: 35px ;
     }
-    .canciones-artista li audio{
-        display: flex;
-        justify-content: flex-end;
-    }
-    .canciones-artista li{
+    .cancion-container{
         display: grid;
-        grid-template-columns: 30% 70%;
-        grid-template-rows: 5vh 5vh 5vh;
+        grid-template-rows: 20vh 20vh 20vh;
+    }
+
+    .cancion{
+        display: grid;
+        grid-template-columns: 20% 80%;
+    }
+    .cancion img{
+        width: 67%;
+    }
+    .titulo p {
+        padding-top: 0px;
+        font-size: 35px;
+    }
+    .titulo i{
+        margin-top: 20px;
     }
 }
