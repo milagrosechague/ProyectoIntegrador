@@ -1,7 +1,9 @@
-
+body{
+    margin: 1px;
+}
 
 .container{
-    margin: auto
+    width: 100%;
 }
 
 .navegacion{ 
@@ -13,6 +15,13 @@
     width: 100%;
     padding-left: 0px;
     align-items: center;
+    background-color: rgb(230, 147, 40);
+    margin-top: 0px;
+}
+.navegacion img{
+    display: block;
+    margin: 0px;
+    height: 80px;
 }
 .navegacion li{
     text-align: center;
@@ -23,7 +32,7 @@ li{
 }
 a { text-decoration: none;
 color: #000000;
-font-size: 100%;
+font-size: 23px;
 }
 img{
     display: block;
@@ -112,8 +121,9 @@ footer ul{
         height: 70px;
         width: 100px;
     }
-    header li{
+    .navegacion li {
         font-size: 40px;
+        text-align: start;
     }
 
     .space p{
@@ -155,14 +165,11 @@ footer ul{
         grid-template-rows: 10vh;
     }
 
-    .navegacion li img{
+    .navegacion .logo{
         width: 20%;
+        height: 10vh;
         display: block;
         padding-left: 0px;
-    }
-
-    .banner{
-        height: 85vh;
     }
 
     h2{
