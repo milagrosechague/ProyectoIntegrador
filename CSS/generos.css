@@ -90,7 +90,8 @@ h1{
     font-family: "Oswald", sans-serif;
     text-align: center;
     font-size: 35px;
-    background-color: rgb(230, 147, 40);
+    background-color: rgba(230, 148, 40, 0.705);
+    margin-top: 20px;
 }
 
 h2{
@@ -131,7 +132,7 @@ h2{
 @media only screen and (min-width: 1024px){
     h1{
         font-size: 50px;
-        margin-top: 0px;
+        margin-top: 40px;
     }
 
 
