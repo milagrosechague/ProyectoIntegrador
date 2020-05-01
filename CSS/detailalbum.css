@@ -70,7 +70,7 @@ i{
         font-size: 50px;
     }
     .artista{
-        height: 195vh
+        height: 200vh
     }
     .perfil-artista{
         display: grid;
@@ -121,7 +121,7 @@ i{
         margin-bottom: 0px;
     }
     .artista{
-        height: 255vh;
+        height: 263vh;
         margin-top: 0px;
     }
     .foto-artista{
