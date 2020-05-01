@@ -87,8 +87,65 @@ p{
 
 }
 @media(min-width: 768px){
-    
+    .fotos-inicio{
+        display: grid;
+        margin: 30px;
+    }
+    .buscador{
+        font-size: 30px;
+    }
+    h1{
+        font-size: 50px;
+    }
+    h2{
+        font-size: 50px;
+    }
+    .add-song{
+        font-size: 30px;
+    }
+    .shuffle-mode{
+        font-size: 30px;
+    }
+    .primer-cancion{
+        display:grid;
+        grid-template-columns: 23% 38% 38%;
+    }
+    .estilo{
+        padding-bottom: 25px;
+        font-size: 30px;
+    }
 }
 @media(min-width: 1024px){
+    .fotos-inicio{
+        display: grid;
+        margin: 160px;
+        margin-top: 50px;
+        margin-bottom: 50px;
+    }
+    .buscador{
+        font-size: 40px;
+        justify-content:space-between ;
+    }
+    h1{
+        font-size: 60px;
+    }
+    h2{
+        font-size: 60px;
+    }
+    .add-song{
+        font-size: 40px;
+    }
+    .shuffle-mode{
+        font-size: 40px;
+    }
+    .primer-cancion{
+        display:grid;
+        grid-template-columns: 22% 38% 38%;
+    }
+    .estilo{
+        padding-bottom: 25px;
+        font-size: 50px;
+        padding-top: 20px;
+    }
 
 }
