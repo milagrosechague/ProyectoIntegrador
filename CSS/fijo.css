@@ -51,19 +51,40 @@ img{
 footer{
     margin-top: 20px;
     display: grid;
-    grid-template-columns: 1fr 1fr; 
+    grid-template-columns: 2fr 1fr; 
     background-color: rgb(230, 147, 40);
+}
+
+.footer-column{
+    display: grid;
+    grid-template-rows: 40% 60%;
+}
+.redes{
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    gap: 0px;
+}
+.redes img{
+    width: 40%;
+    margin-left: 8px;
+    border-radius: 50%;
+}
+
+footer p{
+    font-family: "Oswald", sans-serif;
+    font-size: 17px;
+    margin-bottom: 2px;
 }
 footer ul{
     align-items: center;
-    padding-top: 10px;
+
 }
 
-footer img{
+.logo-deezer{
     display: block;
-    margin-left: 40%;
-    border-radius: 50% 50% 50% 50%;
-    width: 60%;
+    margin-top: 35px;
+    border-radius: 50%;
+    width: 90%;
 }
 
 @media only screen and (min-width: 768px){
@@ -79,14 +100,31 @@ footer img{
     header li{
         font-size: 40px;
     }
+    footer{
+        height: 30vh;
+    }
+    .footer-column{
+        display: grid;
+        grid-template-rows: 10vh 20vh;
+        gap: 0px;
+    }
+    .footer-column p{
+        font-size: 25px;
+        padding-left: 35px;
+    }
+    .redes{
+        display: grid;
+        grid-template-columns: 20% 20% 20%;
+        gap: 30px;
+        padding-left: 55px;
+    }
+    footer ul{
+        padding-left: 120px;
+    }
     footer li{
-        font-size: 30px;
+        font-size: 25px;
     }
     
-    footer ul{
-        padding-top: 20%;
-        
-    }
 }
 @media only screen and (min-width: 1024px){
     header{
@@ -113,15 +151,24 @@ footer img{
     }
 
     footer {
-        height: 33vh;
+        height: 35vh;
         box-sizing: border-box;
     }
-    footer img{
-        width: 50%;
-    }
-    footer ul{
-        padding-top: 30px;
+
+    .footer-column{
+        display: grid;
+        grid-template-rows: 15vh 20vh;
     }
 
+    .footer-column p{
+        font-size: 28px;
+        padding-left: 53px;
+        margin-top: 10px;
+    }
+    
+    .logo-deezer{
+       width: 70%;
+       margin-top: 15px;
+}
 }
 
