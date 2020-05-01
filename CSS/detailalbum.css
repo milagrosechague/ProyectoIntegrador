@@ -65,38 +65,6 @@ i{
     margin-top: 0px;
 }
 
-
-.cancion-container{
-    display: grid;
-    grid-template-rows: 15vh 15vh 15vh;
-    gap: 20px;
-}
-
-.cancion{
-    background-color: rgba(230, 148, 40, 0.719);
-    border-radius: 30px;
-    display: grid;
-    grid-template-columns: 30% 70%;
-    justify-content: center;
-}
-
-.cancion img{
-    display: block;
-    width: 70%;
-    align-items: center;
-    padding: 10px;
-}
-
-.titulo{
-   display: grid;
-   grid-template-rows: 8vh 6vh;
-   padding: auto;
-}
-
-.entrevista{
-    margin-top: 30px;
-}
-
 @media only screen and (min-width: 768px){
     h1{
         font-size: 50px;
