@@ -1,7 +1,9 @@
-
+body{
+    margin: 1px;
+}
 
 .container{
-    margin: auto
+    width: 100%;
 }
 
 .navegacion{ 
@@ -13,6 +15,13 @@
     width: 100%;
     padding-left: 0px;
     align-items: center;
+    background-color: rgb(230, 147, 40);
+    margin-top: 0px;
+}
+.navegacion img{
+    display: block;
+    margin: 0px;
+    height: 80px;
 }
 .navegacion li{
     text-align: center;
@@ -23,7 +32,7 @@ li{
 }
 a { text-decoration: none;
 color: #000000;
-font-size: 100%;
+font-size: 23px;
 }
 img{
     display: block;
@@ -33,15 +42,30 @@ img{
     height: 100%;
 }
 
-.buscador i {
+.buscador{
+    display: grid;
+    height: 10vh;
+    margin-top: 20px;
+    grid-template-columns: 80% 20%;
+    border: solid 3px black;
+    border-radius: 20px;
+    background-color: white;
+}
+.space p{
     font-family: "Oswald", sans-serif;
     font-size: 30px;
-    size: 5px;
-    display: flex;
-    flex-direction: column-reverse;
-    color: rgb(0, 0, 0);
-    border: solid 2px black;
-    border-radius: 10px;
+    margin-top: 10px;
+    text-align: center;
+}
+
+button{
+    height: 10vh;
+    border-radius: 20px;
+}
+
+button i{
+    color: black;
+    width: 100%;
 }
 
 .integrantes{
@@ -97,8 +121,13 @@ footer ul{
         height: 70px;
         width: 100px;
     }
-    header li{
+    .navegacion li {
         font-size: 40px;
+        text-align: start;
+    }
+
+    .space p{
+        font-size: 50px;
     }
     footer{
         height: 30vh;
@@ -136,18 +165,24 @@ footer ul{
         grid-template-rows: 10vh;
     }
 
-    .navegacion li img{
+    .navegacion .logo{
         width: 20%;
+        height: 10vh;
         display: block;
         padding-left: 0px;
     }
 
-    h2{
-        border-radius: 0px;
+    .navegacion li a{
+        font-size: 40px;
     }
- 
-    p{
-        font-size: 150%;
+
+    .buscador{
+        width: 60%;
+        margin-left: 205px;
+        margin-top: 10px;
+    }
+    .space p{
+        padding-top: 0px;
     }
 
     footer {

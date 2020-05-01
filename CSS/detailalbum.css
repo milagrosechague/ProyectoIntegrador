@@ -1,0 +1,168 @@
+
+body{
+    background-image: url(../imagenes/music\ notes.jpg) ;    
+}
+h1{
+    text-align: center;
+    font-family: "Oswald", sans-serif;
+}
+.artista{
+    padding-top: 0px;
+    margin-top: 0px;
+    height: 500h;
+
+}
+.foto-artista{
+    display: grid;
+    grid-template-columns: 50%;
+    justify-content: center;
+    gap: 0px
+}
+
+.info-artista{
+    margin-top: 10px;
+    padding-left: 20px;
+    display: grid;
+    grid-template-rows: 15vh 25vh;
+    list-style: none;
+}
+
+.info-artista li{
+    font-size: 25px;
+}
+
+.canciones-artista li{
+    font-size: 25px;
+}
+
+.canciones-artista li audio{
+    width: 100%;
+}
+
+.billie1{
+    border-radius: 50%;
+    border: solid 5px rgb(230, 147, 40);
+}
+
+h2{
+    display: block;
+    text-align: center;
+    background-color: rgb(230, 147, 40);
+}
+
+b{
+    font-family: "Oswald", sans-serif;
+    padding-left: 25px;
+}
+p{
+    font-family: "Oswald", sans-serif;
+    font-size: 25px;
+}
+
+i{
+    font-family: "Oswald", sans-serif;
+    font-size: 20px;
+    margin-top: 0px;
+}
+
+@media only screen and (min-width: 768px){
+    h1{
+        font-size: 50px;
+    }
+    .artista{
+        height: 195vh
+    }
+    .perfil-artista{
+        display: grid;
+        grid-template-columns: 40% 60%;
+    }
+    
+    .foto-artista{
+        display: grid;
+        grid-template-columns: 90%;
+    }
+    .info-artista{
+        display: grid;
+        grid-template-rows: 10vh 20vh;
+    }
+
+    .detail{
+        display: grid;
+        grid-template-columns: 50% 50%;
+    }
+
+    h2 b{ 
+        font-size: 30px;
+    }
+
+    .cancion-container{
+        display: grid;
+        grid-template-rows: 10vh 10vh 10vh;
+    }
+    .cancion img{
+        width: 75%;
+        padding-left: 23px;
+    }
+    footer {
+        margin-top: 170px;
+    }
+    .titulo p{
+        font-size: 35px;
+        margin-top: 20px;
+    }
+    .titulo i{
+        margin-top: -14px;
+    }
+}
+
+@media only screen and (min-width: 1024px){
+    h1{
+        font-size: 70px;
+        margin-bottom: 0px;
+    }
+    .artista{
+        height: 255vh;
+        margin-top: 0px;
+    }
+    .foto-artista{
+        display: grid;
+        grid-template-columns: 70%;
+        align-items: center;
+    }
+    .info-artista{
+        display: grid;
+        grid-template-rows: 14vh 27vh;
+    }
+    .info-artista li{
+        font-size: 35px ;
+    }
+    .cancion-container{
+        display: grid;
+        grid-template-rows: 20vh 20vh 20vh;
+    }
+
+    .cancion{
+        display: grid;
+        grid-template-columns: 30% 70%;
+    }
+    .cancion img{
+        width: 80%;
+        padding-top: 15px;
+    }
+
+    .titulo{
+        display: grid;
+        grid-template-rows: 10vh 6vh;
+    }
+    .titulo p {
+        padding-top: 12px;
+        font-size: 35px;
+    }
+    .titulo i{
+        margin-top: 0px;
+    }
+    .opcion-botones{ 
+        display: grid;
+        grid-template-columns: 50% 50%;
+        gap: 20px;
+    }

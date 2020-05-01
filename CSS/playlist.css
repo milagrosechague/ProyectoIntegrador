@@ -12,6 +12,7 @@ h1{
         text-align: center;
         font-size: 30px;
 }       
+<<<<<<< HEAD
 .buscador{
   text-align: end;
   padding-right: 20px;
@@ -22,6 +23,9 @@ h1{
 .opciones-laptop{
     display: none;
 }
+=======
+
+>>>>>>> 866e20e04b700b93066b182eec49b1174d883b8f
 .fotos-inicio{
     display: grid;
     grid-template-columns: 50% 50%;
