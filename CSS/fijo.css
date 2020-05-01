@@ -172,12 +172,8 @@ footer ul{
         padding-left: 0px;
     }
 
-    h2{
-        border-radius: 0px;
-    }
- 
-    p{
-        font-size: 150%;
+    .navegacion li a{
+        font-size: 40px;
     }
 
     .buscador{
