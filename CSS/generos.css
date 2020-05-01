@@ -83,11 +83,13 @@
     to {opacity: 1}
   }
  
+  /* termina carousel*/
+
 
 h1{
     font-family: "Oswald", sans-serif;
     text-align: center;
-    font-size: 25px;
+    font-size: 35px;
     background-color: rgb(230, 147, 40);
 }
 
@@ -99,12 +101,7 @@ h2{
     
 }
 
-.buscador{
-    background-color: rgba(230, 148, 40, 0);
-    display: block;
-    text-align: center;
-    border-radius: 0px;
-}
+
 .contenido{
     display: grid;
     grid-template-columns: 50% 50%;
@@ -133,7 +130,8 @@ h2{
 
 @media only screen and (min-width: 1024px){
     h1{
-        font-size: 40px;
+        font-size: 50px;
+        margin-top: 0px;
     }
 
 

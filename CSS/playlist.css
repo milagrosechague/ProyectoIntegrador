@@ -12,13 +12,7 @@ h1{
         text-align: center;
         font-size: 30px;
 }       
-.buscador{
-  text-align: end;
-  padding-right: 20px;
-  padding-top: 20px;
-  font-family: "Oswald", sans-serif;
-  color: solid black;
-}
+
 .fotos-inicio{
     display: grid;
     grid-template-columns: 50% 50%;
