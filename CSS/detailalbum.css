@@ -161,3 +161,8 @@ i{
     .titulo i{
         margin-top: 0px;
     }
+    .opcion-botones{ 
+        display: grid;
+        grid-template-columns: 50% 50%;
+        gap: 20px;
+    }
