@@ -2,10 +2,7 @@
     display: grid;
     background-image: url(../imagenes/music\ notes.jpg);
 }
-.navegacion.logo{
-    width: 76.8px;
-    height: 102.19px;
-}
+
 h1{
     font-family: "Oswald", sans-serif;
         background-color: rgb(230, 147, 40);
@@ -13,12 +10,14 @@ h1{
         font-size: 30px;
 }       
 .buscador-playlist{
-  text-align: end;
-  padding-right: 20px;
-  padding-top: 20px;
-  font-family: "Oswald", sans-serif;
-  color: solid black;
-  font-size: 20px;
+    display: inline;
+    text-align: end;
+    padding-right: 20px;
+    padding-top: 20px;
+    font-family: "Oswald", sans-serif;
+    color: solid black;
+    font-size: 20px;
+    margin-top: 20px;
 }
 .opciones-laptop{
     display: none;
@@ -123,6 +122,7 @@ strong{
         font-size: 20px;
     }
 }
+
 @media only screen and (min-width: 1024px){
     .laptop{
         display: grid;
@@ -130,7 +130,7 @@ strong{
     }
     .opciones-laptop{
         display: grid;
-        grid-template-rows: 1fr 1fr 1fr;
+        grid-template-rows: 20px 20px 20px;
     }
     .buscador{
         font-size: 40px;
@@ -156,7 +156,7 @@ strong{
     }
     .primer-cancion{
         display: grid;
-        grid-template-rows: 25% 25% 25% 25%;
+        grid-template-columns: 25% 25% 25% 25%;
     }
     .album{
         display: grid;
