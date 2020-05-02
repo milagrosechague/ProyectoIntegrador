@@ -9,16 +9,7 @@ h1{
         text-align: center;
         font-size: 30px;
 }       
-.buscador-playlist{
-    display: inline;
-    text-align: end;
-    padding-right: 20px;
-    padding-top: 20px;
-    font-family: "Oswald", sans-serif;
-    color: solid black;
-    font-size: 20px;
-    margin-top: 20px;
-}
+
 .opciones-laptop{
     display: none;
 }
@@ -33,6 +24,7 @@ h1{
     width: 100%;
     height: 100%;
 }
+
 h2{
     font-family: "Oswald", sans-serif;
     color: solid black;
@@ -117,7 +109,7 @@ strong{
     strong{
         font-size: 30px;
     }
-    }
+
     .estilo{
         font-size: 20px;
     }
