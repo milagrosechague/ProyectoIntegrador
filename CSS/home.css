@@ -139,3 +139,22 @@ p{
         font-size: 40px;
     }
 }
+
+@media only screen and (min-width: 1440px){
+    .img-container{
+        display: grid;
+        grid-template-rows: 30vh 30vh 30vh 30vh;
+        gap: 20px;
+    }
+    .nombres-container {
+        display: grid;
+        grid-template-rows: 30vh 30vh 30vh 30vh;
+        gap: 20px;
+        padding-top: 35px;
+    }
+
+}
+
+@media only screen and (min-width: 1690px){
+    
+}

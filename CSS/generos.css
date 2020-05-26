@@ -139,6 +139,7 @@ h2{
     .contenido{
         display: grid;
         grid-template-columns: 1fr 1fr 1fr 1fr;
+        grid-template-rows: 55vh;
         gap: 20px;
         height: 60vh;
     }

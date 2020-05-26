@@ -10,7 +10,7 @@
     <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.13.0/css/all.min.css" rel="stylesheet">
 </head>
 <body>
-    <div class="grid-container">
+    <div class="container">
         <header>
             <ul class="navegacion">
                 <li> <img class="logo" src="../imagenes/logo.JPG" alt="Logo"></li>
@@ -20,10 +20,10 @@
             </ul>
          </header>
          <section class="buscador">
-            <div class="space">
-                <p>Buscador...</p>
-            </div>
-            <button><i class="fas fa-search"></i></button>
+            <form action="" method="GET">
+                <input type="text" name="search">
+                <button type="submit"><i class="fas fa-search"></i></button>
+            </form>
     </section>
         <h1 name= "my playlist">My Playlists</h1>
         <div class="laptop">
@@ -114,21 +114,21 @@
             </article>
          </div>
          <footer>
-            <div class="footer-column">
+            <section class="footer-column">
              <div>
                 <p>Comparti tu experiencia con nosotros</p>
-                <div class="redes">
+                <article class="redes">
                 <img src="../imagenes/instagram.jpg" alt="logoinsta">
                 <img src="../imagenes/twitter.png" alt="logotwitter">
                 <img src="../imagenes/facebook.jpg" alt="logoface">
-             </div>
+                </article>
              </div>
              <ul>
                 <li>Milagros Echague</li>
                 <li>Gonzalo Ocampos</li>
                 <li>Matias Maldonado</li>
              </ul> 
-            </div>
+            </section>
            <img class="logo-deezer" src="../imagenes/logo-deezer.png" alt="logo-deezer">
         </footer>
     </div>

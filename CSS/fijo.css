@@ -34,6 +34,7 @@ a { text-decoration: none;
 color: #000000;
 font-size: 23px;
 }
+
 img{
     display: block;
     width: 100%;
@@ -46,17 +47,23 @@ img{
     display: grid;
     height: 10vh;
     margin-top: 20px;
-    grid-template-columns: 80% 20%;
+
     border: solid 3px black;
     border-radius: 20px;
     background-color: white;
 }
-.space p{
-    font-family: "Oswald", sans-serif;
-    font-size: 30px;
-    margin-top: 10px;
-    text-align: center;
+
+form{
+    width: 100%;
+    display: grid;
+    grid-template-columns: 75% 20%;
+    padding-left: 15px;
 }
+
+input{
+    border: none;
+}
+
 
 button{
     height: 10vh;
@@ -207,3 +214,39 @@ footer ul{
 }
 }
 
+@media only screen and (min-width: 1440px){
+
+    .buscador{
+        margin-left: 300px;
+    }
+}
+
+@media only screen and (min-width: 1690px){
+
+    .container{
+        margin-left: 200px;
+        width: 80%;
+    }
+
+    p{
+        font-size: 40px;
+    }
+
+    footer {
+        height: 45vh;
+
+    }
+    .footer-column {
+        display: grid;
+        grid-template-rows: 20vh 25vh;
+    }
+    .footer-column p {
+        font-size: 50px;}
+    
+     footer li {
+            font-size: 45px;
+        } 
+     .logo-deezer {
+            width: 65%;
+        }
+}
