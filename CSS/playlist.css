@@ -122,7 +122,7 @@ strong{
     }
     .opciones-laptop{
         display: grid;
-        grid-template-rows: 20px 20px 20px;
+        grid-template-rows: 33% 33% 33%;
     }
     .buscador{
         font-size: 40px;
@@ -136,6 +136,8 @@ strong{
     }
     .opciones-canciones{
         margin-bottom: 30px;
+        font-size: 40px;
+        text-align: center;
     }
     .add-song{
         font-size: 40px;
@@ -150,9 +152,13 @@ strong{
         display: grid;
         grid-template-columns: 25% 25% 25% 25%;
     }
+    .modos-canciones{
+        display: grid;
+        grid-template-columns: 25% 25% 25% 25%;
+    }
     .album{
         display: grid;
-        font-size: 30px;
+        font-size: 20px;
         font-family: "Oswald", sans-serif;
         text-align: center;  
     }
