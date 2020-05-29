@@ -1,6 +1,5 @@
-.container{
+body{
     background-image: url(../imagenes/music\ notes.jpg);
-    background-position: cover;
 }
 
 h1{
@@ -10,16 +9,14 @@ h1{
     display: inline;
     background-color: rgba(230, 148, 40, 0.767);
     border-radius: 15px;
-    margin-left: 85px;
+    margin-left: 20%;
 }
 
 .todo .track{
-    height: 80vh;
     margin-top: 20px;
 }
 
 .info-track{
-    height: 75vh;
     display: grid;
     grid-template-rows: 70% 15% 15%;
     align-items: center;
@@ -28,15 +25,15 @@ h1{
 
 .track-image{
     display: grid;
-    grid-template-columns: 85%;
+    grid-template-columns: 65%;
     justify-content: center;
 }
 
 .info{
     width: 100%;
     display: grid;
-    grid-template-columns: 50% 50%;
-    padding-left: 40px;
+    grid-template-columns: 35% 35% 30%;
+    padding-left: 15px;
 
 }
 
@@ -44,20 +41,12 @@ h1{
     font-size: 20px;
     font-family: "Oswald", sans-serif;
 }
-.cancion{
-    display: grid;
-    grid-template-columns: 90% 10%;
-    align-items: center;
-    justify-content: center;
+
+.add{
+    padding: 15%;
 }
 
-div i{
-    color: #000000;
-}
-
-footer{
-    margin-top: 40px;
-}
+/*seccion aparece en 1024 recien */
 
 .canciones-recomendadas{
     padding-top: 50px;
@@ -85,7 +74,6 @@ i{
 }
 
 
-
 .titulo{
     display: grid;
     grid-template-columns: 80% 20%;
@@ -99,36 +87,29 @@ i{
 
 @media only screen and (min-width: 768px){
    .track{
-       height: 60vh;
        margin-top: 30px;
    }
 
    h1{
        font-size: 50px;
-       margin-left: 200px;
    }
 
    .info-track{
-       margin-top: 90px;
-       height: 60vh;
        gap: 20px;
    }
 
    .track-image{
     width: 75%;
-    padding-left: 90px;
+
 }
 
 .info p{
     font-size: 40px;
     padding-left: 45px;
-    padding-top: 20px;
 }
-.cancion div i{
-    padding-left: 30px;
-}
-.cancion audio{
-    width: 100%;
+
+.add{
+    padding: 25%;
 }
 
 }
@@ -144,7 +125,6 @@ i{
 
  h1{
      font-size: 45px;
-     margin-left: 180px;
  }
     .canciones-recomendadas{
         display: block
@@ -154,43 +134,23 @@ i{
         font-size: 20px;
     }
 
-    .track{
-        height: 85vh;
-    }
-
-    .info-track{
-        height: 60vh;
-        margin-top: 45px;
-        display: grid;
-        grid-template-rows: 60% 20% 20%;
-        gap: 0px
-    }
     .track-image{
-        width: 64%;
-        padding-left: 130px;
+        width: 71%;
     }
     .info p{
-font-size: 30px;
+    font-size: 30px;
     }
 }
 
 @media only screen and (min-width: 1440px){
     h1{
         font-size: 45px;
-        margin-left: 260px;
     }
-    .info-track{
-        height: 73vh;
-        display: grid;
-        grid-template-rows: 62% 19% 10%;
-        gap: 0px;
-    }
-    .track-image{
-        width: 55%;
-        padding-left: 160px;
-        padding-top: 40px;
-    }
+  
     .info{
-        width: 95%;
+        width: 75%;
+    }
+    .add{
+        padding: 20%;
     }
 }

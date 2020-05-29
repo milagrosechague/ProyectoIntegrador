@@ -32,7 +32,7 @@ li{
 }
 a { text-decoration: none;
 color: #000000;
-font-size: 23px;
+font-size: 21px;
 }
 
 img{
@@ -249,4 +249,11 @@ footer ul{
      .logo-deezer {
             width: 65%;
         }
+}
+
+@media only screen and (min-width: 2000px){
+.container {
+    margin-left: 300px;
+    width: 70%;
+}
 }
