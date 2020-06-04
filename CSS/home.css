@@ -45,20 +45,42 @@ h2{
         gap: 10px;
     }
 
-.img-container{
+.imgContainer{
     display: grid;
     grid-template-rows: 30vh 30vh 30vh 30vh;
 }
-.img-container img{
+
+.fotoArtistas{
+    display: grid;
+    grid-template-rows: 30vh 30vh 30vh 30vh;
+}
+.imgContainer img{
     border-radius: 30px;
 }
 
-.img-container .img-artista{
+.fotoArtistas .imgArtista{
     border-radius: 55%;
 }
 
-.nombres-container {
+.cover{
+    display: grid;
+    grid-template-rows: 30vh 30vh 30vh 30vh;
+}
+
+.nombresContainer {
         display: grid;
+        grid-template-rows: 30vh 30vh 30vh 30vh;
+        gap: 10px;
+}
+
+.nombres{
+        display: grid;
+        grid-template-rows: 30vh 30vh 30vh 30vh;
+        gap: 10px;
+}
+
+.artistas{
+    display: grid;
         grid-template-rows: 30vh 30vh 30vh 30vh;
         gap: 10px;
 }
@@ -89,11 +111,30 @@ p{
     h2{
         font-size: 50px;
     }
-    .img-container{
+    .imgContainer{
         display: grid;
         grid-template-rows: 40vh 40vh 40vh 40vh;
     }
-    .nombres-container{
+    .fotoArtistas{
+        display: grid;
+        grid-template-rows: 40vh 40vh 40vh 40vh;
+    }
+    .cover{
+        display: grid;
+        grid-template-rows: 40vh 40vh 40vh 40vh;
+    }
+    .nombresContainer{
+        display: grid;
+        grid-template-rows: 40vh 40vh 40vh 40vh;
+        gap: 10px;
+    }
+
+    .nombres{
+        display: grid;
+        grid-template-rows: 40vh 40vh 40vh 40vh;
+        gap: 10px;
+    }
+    .artistas{
         display: grid;
         grid-template-rows: 40vh 40vh 40vh 40vh;
         gap: 10px;
@@ -124,12 +165,34 @@ p{
         gap: 40px
     }
 
-    .img-container{
+    .imgContainer{
         display: grid;
         grid-template-rows: 25vh 25vh 25vh 25vh;
         gap: 20px;
     }
-    .nombres-container {
+    .fotoArtistas{
+        display: grid;
+        grid-template-rows: 25vh 25vh 25vh 25vh;
+        gap: 20px;
+    }
+
+    .cover{
+        display: grid;
+        grid-template-rows: 25vh 25vh 25vh 25vh;
+        gap: 20px;
+    }
+    .nombresContainer {
+        display: grid;
+        grid-template-rows: 25vh 25vh 25vh 25vh;
+        gap: 20px;
+    }
+
+    .nombres{
+        display: grid;
+        grid-template-rows: 25vh 25vh 25vh 25vh;
+        gap: 20px;
+    }
+    .artistas{
         display: grid;
         grid-template-rows: 25vh 25vh 25vh 25vh;
         gap: 20px;
@@ -141,12 +204,36 @@ p{
 }
 
 @media only screen and (min-width: 1440px){
-    .img-container{
+    .imgContainer{
         display: grid;
         grid-template-rows: 30vh 30vh 30vh 30vh;
         gap: 20px;
     }
-    .nombres-container {
+    .fotoArtistas{
+        display: grid;
+        grid-template-rows: 30vh 30vh 30vh 30vh;
+        gap: 20px;
+    }
+    .nombresContainer {
+        display: grid;
+        grid-template-rows: 30vh 30vh 30vh 30vh;
+        gap: 20px;
+        padding-top: 35px;
+    }
+    .cover{
+        display: grid;
+        grid-template-rows: 30vh 30vh 30vh 30vh;
+        gap: 20px;
+        padding-top: 35px;
+    }
+
+    .nombres{
+        display: grid;
+        grid-template-rows: 30vh 30vh 30vh 30vh;
+        gap: 20px;
+        padding-top: 35px;
+    }
+    .artistas{
         display: grid;
         grid-template-rows: 30vh 30vh 30vh 30vh;
         gap: 20px;
