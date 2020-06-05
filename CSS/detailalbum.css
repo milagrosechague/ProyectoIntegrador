@@ -65,6 +65,11 @@ i{
     margin-top: 0px;
 }
 
+.cancion{
+    display: grid;
+    grid-template-columns: 50% 25% 25%;
+}
+
 @media only screen and (min-width: 768px){
     h1{
         font-size: 50px;
@@ -141,10 +146,6 @@ i{
         grid-template-rows: 20vh 20vh 20vh;
     }
 
-    .cancion{
-        display: grid;
-        grid-template-columns: 30% 70%;
-    }
     .cancion img{
         width: 80%;
         padding-top: 15px;
