@@ -9,7 +9,9 @@ h1{
         text-align: center;
         font-size: 30px;
 }       
-
+.buscador{
+    text-align: end;
+}
 .opciones-laptop{
     display: none;
 }
