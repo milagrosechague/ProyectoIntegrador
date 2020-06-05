@@ -47,12 +47,14 @@ h2{
 
 .imgContainer{
     display: grid;
-    grid-template-rows: 30vh 30vh 30vh 30vh;
+    grid-template-rows: 25% 25% 25% 25%;
+    gap: 10px;
 }
 
 .fotoArtistas{
     display: grid;
-    grid-template-rows: 30vh 30vh 30vh 30vh;
+    grid-template-rows: 100% 100% 100% 100%;
+    gap: 10px;
 }
 .imgContainer img{
     border-radius: 30px;
@@ -64,24 +66,25 @@ h2{
 
 .cover{
     display: grid;
-    grid-template-rows: 30vh 30vh 30vh 30vh;
+    grid-template-rows: 100% 100% 100% 100%;
+    gap: 10px;
 }
 
 .nombresContainer {
         display: grid;
-        grid-template-rows: 30vh 30vh 30vh 30vh;
+        grid-template-rows: 25% 25% 25% 25%;
         gap: 10px;
 }
 
 .nombres{
         display: grid;
-        grid-template-rows: 30vh 30vh 30vh 30vh;
+        grid-template-rows: 100% 100% 100% 100%;
         gap: 10px;
 }
 
 .artistas{
-    display: grid;
-        grid-template-rows: 30vh 30vh 30vh 30vh;
+        display: grid;
+        grid-template-rows: 100% 100% 100% 100%;
         gap: 10px;
 }
 
@@ -111,34 +114,7 @@ p{
     h2{
         font-size: 50px;
     }
-    .imgContainer{
-        display: grid;
-        grid-template-rows: 40vh 40vh 40vh 40vh;
-    }
-    .fotoArtistas{
-        display: grid;
-        grid-template-rows: 40vh 40vh 40vh 40vh;
-    }
-    .cover{
-        display: grid;
-        grid-template-rows: 40vh 40vh 40vh 40vh;
-    }
-    .nombresContainer{
-        display: grid;
-        grid-template-rows: 40vh 40vh 40vh 40vh;
-        gap: 10px;
-    }
-
-    .nombres{
-        display: grid;
-        grid-template-rows: 40vh 40vh 40vh 40vh;
-        gap: 10px;
-    }
-    .artistas{
-        display: grid;
-        grid-template-rows: 40vh 40vh 40vh 40vh;
-        gap: 10px;
-    }
+    
     p{
         font-size: 40px;
     }
@@ -164,37 +140,30 @@ p{
         grid-template-columns: 1fr 1fr 1fr;
         gap: 40px
     }
-
     .imgContainer{
         display: grid;
-        grid-template-rows: 25vh 25vh 25vh 25vh;
         gap: 20px;
     }
     .fotoArtistas{
         display: grid;
-        grid-template-rows: 25vh 25vh 25vh 25vh;
         gap: 20px;
     }
 
     .cover{
         display: grid;
-        grid-template-rows: 25vh 25vh 25vh 25vh;
         gap: 20px;
     }
     .nombresContainer {
         display: grid;
-        grid-template-rows: 25vh 25vh 25vh 25vh;
         gap: 20px;
     }
 
     .nombres{
         display: grid;
-        grid-template-rows: 25vh 25vh 25vh 25vh;
         gap: 20px;
     }
     .artistas{
         display: grid;
-        grid-template-rows: 25vh 25vh 25vh 25vh;
         gap: 20px;
     }
     section h2{
@@ -206,37 +175,30 @@ p{
 @media only screen and (min-width: 1440px){
     .imgContainer{
         display: grid;
-        grid-template-rows: 30vh 30vh 30vh 30vh;
-        gap: 20px;
+        gap: 30px;
     }
     .fotoArtistas{
         display: grid;
-        grid-template-rows: 30vh 30vh 30vh 30vh;
-        gap: 20px;
+        gap: 17px;
     }
     .nombresContainer {
         display: grid;
-        grid-template-rows: 30vh 30vh 30vh 30vh;
-        gap: 20px;
+        gap: 40px;
         padding-top: 35px;
     }
     .cover{
         display: grid;
-        grid-template-rows: 30vh 30vh 30vh 30vh;
-        gap: 20px;
-        padding-top: 35px;
+        gap: 17px;
     }
 
     .nombres{
         display: grid;
-        grid-template-rows: 30vh 30vh 30vh 30vh;
-        gap: 20px;
-        padding-top: 35px;
+        gap: 40px;
+        padding-top: 0px;
     }
     .artistas{
         display: grid;
-        grid-template-rows: 30vh 30vh 30vh 30vh;
-        gap: 20px;
+        gap: 40px;
         padding-top: 35px;
     }
 
