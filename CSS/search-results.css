@@ -1,0 +1,85 @@
+body {
+    font-family: "Oswald", sans-serif;
+	background-image: url(../imagenes/music\ notes.jpg);
+}
+
+.headings{
+    display: none;
+}
+
+.img-container{
+    display: none;
+}
+
+.duracion{
+    display: none;
+}
+ .album{
+     display: none;
+ }
+
+ .track-info{
+     width: 90%;
+     display: grid;
+     grid-template-columns: 70% 30%;
+     gap: 0px;
+ }
+ @media only screen and (min-width: 768px){
+     .ul{
+         display: grid;
+         grid-template-rows: 25px 95%;
+     }
+    .headings{
+         display: grid;
+         grid-template-columns: 40% 20% 20% 10%;
+         justify-content: center;
+         align-items: center;
+
+     }
+
+     .headings h3{
+         background-color: rgba(230, 148, 40, 0.616);
+         font-size: 30px;
+     }
+
+     .dur{
+         padding-left: 70px;
+     }
+     .duracion{
+         display: block;
+         padding-left: 60px;
+     }
+     .album{
+         display: block;
+     }
+     .track-info{
+         display: grid;
+         grid-template-columns: 40% 20% 20% 10%;
+         justify-content: center;
+         align-items: center;
+         gap: 20px;
+         margin-left: 30px;
+     }
+ }
+
+ @media only screen and (min-width: 1024px){
+     .img-container{
+         display: block;
+        width: 100%;
+     }
+     .track-img{
+        border-radius: 100px;
+        border: 2px solid black;
+     }
+
+     .track-item{
+         display: grid;
+         grid-template-columns: 5% 90%;
+         gap: 0px;
+         align-items: center;
+     }
+ }
+
+
+
+

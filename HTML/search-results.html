@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="../CSS/search-results.css">
+    <link rel="stylesheet" href="../CSS/fijo.css">
+    <script src="https://kit.fontawesome.com/a0c0bb4f74.js" crossorigin="anonymous"></script>
+    <link href="https://fonts.googleapis.com/css2?family=Oswald:wght@200;400&display=swap" rel="stylesheet">
+    <title>search</title>
+</head>
+<body>
+    <header>
+        <ul class="navegacion">
+            <li> <img class="logo" src="../imagenes/logo.JPG" alt="Logo"></li>
+            <li><a href="home.html">INICIO</a></li>
+            <li><a href="playlist.html">PLAYLIST</a></li>
+            <li><a href="generos.html">GENEROS</a></li>
+        </ul>
+     </header>
+     <nav class="buscador">
+        <form action="search-results.html" method="GET">
+            <input type="text" name="search" placeholder="Search">
+            <button type="submit"><i class="fas fa-search"></i></button>
+        </form>
+    </nav>
+    <main>
+        <ul class="ul">
+            <li class="headings">
+                <h3>TRACK</h3>
+                <h3>ARTIST</h3>
+                <h3>ALBUM</h3>
+                <h3 class="dur"><i class="fab fa-algolia"></i></h3>
+            </li>
+            <li class="track-item">
+                <div class="img-container">
+                    <img class="track-img" src="" alt="track-image">
+                </div>
+                <div class="track-info">
+                    <a href="" class="title"><p></p></a>
+                    <a href="" class="artista"><p></p></a>
+                    <a href="" class="album"><p></p></a>
+                    <p class="duracion"></p>
+                </div>
+            </li>
+        </ul>
+    </main>
+     <footer>
+        <section class="footer-column">
+         <div>
+            <p>Comparti tu experiencia con nosotros</p>
+            <article class="redes">
+            <img src="../imagenes/instagram.jpg" alt="logoinsta">
+            <img src="../imagenes/twitter.png" alt="logotwitter">
+            <img src="../imagenes/facebook.jpg" alt="logoface">
+            </article>
+         </div>
+         <ul>
+            <li>Milagros Echague</li>
+            <li>Gonzalo Ocampos</li>
+            <li>Matias Maldonado</li>
+         </ul> 
+        </section>
+       <img class="logo-deezer" src="../imagenes/logo-deezer.png" alt="logo-deezer">
+    </footer>
+    <script src="JS/search-results.js"></script>
+</body>
+</html>

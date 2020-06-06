@@ -18,7 +18,7 @@ h1{
 
 .info-track{
     display: grid;
-    grid-template-rows: 70% 15% 100px;
+    grid-template-rows: 50% 10% 100px;
     align-items: center;
     
 }
@@ -106,12 +106,12 @@ i{
 }
 
 .info p{
-    font-size: 40px;
+    font-size: 35px;
     padding-left: 45px;
 }
 
 .add{
-    padding: 25%;
+    padding: 50%;
 }
 
 }
@@ -136,11 +136,16 @@ i{
         font-size: 20px;
     }
 
+    .info {
+        display: grid;
+        grid-template-columns: 40% 40% 20%;
+        padding-left: 0px;
+    }
     .track-image{
-        width: 60%;
+        width: 70%;
     }
     .info p{
-    font-size: 30px;
+    font-size: 22px;
     }
 }
 

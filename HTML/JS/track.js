@@ -3,6 +3,8 @@ window.addEventListener("load", function(){
     let datos = new URLSearchParams(queryString);
     let idTrack = datos.get('id'); 
 
+    document.querySelector('.cancion').innerHTML = '<iframe scrolling="no" frameborder="0" allowTransparency="true" src="https://www.deezer.com/plugins/player?format=classic&autoplay=true&playlist=true&width=700&height=350&color=007FEB&layout=&size=medium&type=tracks&id=' + idTrack +'&app_id=1" width="100%" height="88"></iframe>';
+
     fetch("https://cors-anywhere.herokuapp.com/https://api.deezer.com/track/" + idTrack)
     .then(
         function(response){
@@ -26,10 +28,6 @@ window.addEventListener("load", function(){
             let artista = info.artist.name
             let idArtista = info.artist.id
             document.querySelector('.artist').innerHTML = '<a href="detail-artista.html?id=' + idArtista + '"><p>'+ artista + '</p></a>';
-
-            let cancion = document.querySelector('iframe');
-            cancion.src = 'https://www.deezer.com/plugins/player?format=classic&autoplay=false&playlist=true&width=700&height=350&color=007FEB&layout=&size=medium&type=tracks&id=' + idTrack;
-            cancion.style.display = 'block';
           
             //Recupero datos del storage
             let recuperoStorage = localStorage.getItem('playlist');

@@ -8,8 +8,8 @@ window.addEventListener("load", function() {
     )
 
     .then(
-        function (info) {
-            
+        function (info){
+               
             let trackList = info.tracks.data
 
             console.log(trackList);
