@@ -31,6 +31,8 @@ window.addEventListener("load", function() {
             for(let i=0; i<canciones.length; i++){
                 let name = canciones[i].title
                 let artist = canciones[i].artist.name
+                let idTrack = canciones[i].id
+                let idAlbum = canciones[i].artist.id
 
                 let duracion = canciones[i].duration
                 let minutos = duracion/60
@@ -42,7 +44,7 @@ window.addEventListener("load", function() {
                 //document.querySelector('.duracion').innerHTML += minutos + ':' + seconds;
                 //document.querySelector('.artista').innerHTML += artist;
 
-                document.querySelector('.cancion').innerHTML += '<p>'+ name + '</p><p>'+ minutos +':' + seconds + '</p><p>'+ artist +'</p>'
+                document.querySelector('.cancion').innerHTML += '<a href="track.html?id=' + idTrack + '"><p>'+ name + '</p></a><p>'+ minutos +':' + seconds + '</p><a href="detail-artista.html?id=' + idAlbum + '"><p>'+ artist +'</p></a>'
 
             }
             

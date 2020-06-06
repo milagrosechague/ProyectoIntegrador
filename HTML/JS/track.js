@@ -20,10 +20,12 @@ window.addEventListener("load", function(){
             document.querySelector('.trackImage').src = trackImage; 
 
             let album = info.album.title
-            document.querySelector('.album').innerHTML = album; 
+            let idAlbum = info.album.id
+            document.querySelector('.album').innerHTML = '<a href="detail-album.html?id=' + idAlbum + '"><p>'+ album + '</p></a>'; 
 
             let artista = info.artist.name
-            document.querySelector('.artist').innerHTML = artista;
+            let idArtista = info.artist.id
+            document.querySelector('.artist').innerHTML = '<a href="detail-artista.html?id=' + idArtista + '"><p>'+ artista + '</p></a>';
 
             let cancion = document.querySelector('iframe');
             cancion.src = 'https://www.deezer.com/plugins/player?format=classic&autoplay=false&playlist=true&width=700&height=350&color=007FEB&layout=&size=medium&type=tracks&id=' + idTrack;

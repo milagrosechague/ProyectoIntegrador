@@ -40,11 +40,12 @@ window.addEventListener("load", function() {
                          let trackAlbum = topTracks[i].album.title;
                          let trackCover = topTracks[i].album.cover;
                          let idTrack = topTracks[i].id; 
+                         let idAlbum = topTracks[i].album.id;
 
                          let track = `<img src="` + trackCover + `" alt="track-cover">
                                       <div class="titulo">
                                            <a href="track.html?id=` + idTrack + `"><p>`+ trackTitle + `</p></a>
-                                           <i>`+ trackAlbum + `</i>
+                                           <a href="detail-album.html?id=` + idAlbum + `"><i>`+ trackAlbum + `</i></a>
                                       </div>`;
                          document.querySelector('.cancion').innerHTML += track;
                      }

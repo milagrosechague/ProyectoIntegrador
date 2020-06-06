@@ -146,12 +146,12 @@ p{
     }
     .fotoArtistas{
         display: grid;
-        gap: 20px;
+        gap: 10px;
     }
 
     .cover{
         display: grid;
-        gap: 20px;
+        gap: 10px;
     }
     .nombresContainer {
         display: grid;

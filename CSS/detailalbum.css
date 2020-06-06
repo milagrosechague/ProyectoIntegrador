@@ -9,8 +9,6 @@ h1{
 .artista{
     padding-top: 0px;
     margin-top: 0px;
-    height: 500h;
-
 }
 .foto-artista{
     display: grid;
@@ -23,7 +21,8 @@ h1{
     margin-top: 10px;
     padding-left: 20px;
     display: grid;
-    grid-template-rows: 15vh 25vh;
+    grid-template-rows: 50% 50%;
+    gap: 15px;
     list-style: none;
 }
 
@@ -33,10 +32,6 @@ h1{
 
 .canciones-artista li{
     font-size: 25px;
-}
-
-.canciones-artista li audio{
-    width: 100%;
 }
 
 .billie1{
@@ -68,48 +63,21 @@ i{
 .cancion{
     display: grid;
     grid-template-columns: 50% 25% 25%;
+    border-bottom: solid 5px black;
 }
 
 @media only screen and (min-width: 768px){
     h1{
         font-size: 50px;
     }
-    .artista{
-        height: 200vh
-    }
-    .perfil-artista{
-        display: grid;
-        grid-template-columns: 40% 60%;
-    }
     
     .foto-artista{
         display: grid;
         grid-template-columns: 90%;
     }
-    .info-artista{
-        display: grid;
-        grid-template-rows: 10vh 20vh;
-    }
-
-    .detail{
-        display: grid;
-        grid-template-columns: 50% 50%;
-    }
 
     h2 b{ 
         font-size: 30px;
-    }
-
-    .cancion-container{
-        display: grid;
-        grid-template-rows: 10vh 10vh 10vh;
-    }
-    .cancion img{
-        width: 75%;
-        padding-left: 23px;
-    }
-    footer {
-        margin-top: 170px;
     }
     .titulo p{
         font-size: 35px;
@@ -125,36 +93,21 @@ i{
         font-size: 70px;
         margin-bottom: 0px;
     }
-    .artista{
-        height: 263vh;
-        margin-top: 0px;
+
+    .perfil-artista{
+        display: grid;
+        grid-template-columns: 50% 50%;
     }
     .foto-artista{
         display: grid;
         grid-template-columns: 70%;
         align-items: center;
     }
-    .info-artista{
-        display: grid;
-        grid-template-rows: 14vh 27vh;
-    }
+
     .info-artista li{
         font-size: 35px ;
     }
-    .cancion-container{
-        display: grid;
-        grid-template-rows: 20vh 20vh 20vh;
-    }
-
-    .cancion img{
-        width: 80%;
-        padding-top: 15px;
-    }
-
-    .titulo{
-        display: grid;
-        grid-template-rows: 10vh 6vh;
-    }
+  
     .titulo p {
         padding-top: 12px;
         font-size: 35px;
