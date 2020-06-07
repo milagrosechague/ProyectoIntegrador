@@ -32,12 +32,27 @@ window.addEventListener('load', function() {
                   let seconds = trackDur %60
                   if(seconds<10){ seconds = '0' + seconds }
 
-                 let info = document.querySelector('.track-info').innerHTML += 
+                 document.querySelector('.track-info').innerHTML += 
                  `<div class="img-container">` + img + `</div>
                  <a href="track.html?id=`+ idTrack + `" class="title"><p>` + trackTitle + `</p></a>
                  <a href="detail-artista.html?id=` + idArtista + `" class="artista"><p>` + trackArtist + `</p></a>
                  <a href="detail-album.html?id=` + idAlbum + `" class="album"><p>` + trackAlbum + `</p></a>
                  <p class="duracion">` + minutos + `:` + seconds + `</p>`  
+
+                 let track = document.querySelectorAll('.track-info');
+
+                 track.forEach (function (item){
+                    item.addEventListener('mouseover', function(){
+                        this.style.backgroundColor = 'rgba(230, 148, 40, 0.719)';
+
+                    })
+                  
+                    item.addEventListener('mouseout', function(){
+                        this.style.backgroundColor= 'rgba(230, 148, 40, 0.000)';
+                    })
+                  })
+
+            
              }
 
         })

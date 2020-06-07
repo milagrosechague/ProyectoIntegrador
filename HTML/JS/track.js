@@ -28,6 +28,7 @@ window.addEventListener("load", function(){
             let artista = info.artist.name
             let idArtista = info.artist.id
             document.querySelector('.artist').innerHTML = '<a href="detail-artista.html?id=' + idArtista + '"><p>'+ artista + '</p></a>';
+            document.querySelector('.mas').innerHTML = 'Mas Canciones de '+ artista;
           
             //Recupero datos del storage
             let recuperoStorage = localStorage.getItem('playlist');
@@ -63,8 +64,39 @@ window.addEventListener("load", function(){
             let playlistStorage = JSON.stringify(playlist);
             localStorage.setItem('playlist', playlistStorage);
             })
+
+            //seccion canciones de artista
+
+            let otras = info.artist.tracklist
+            let url = "https://cors-anywhere.herokuapp.com/" + otras
+
+            fetch(url)
+            .then(
+                function(response){
+                    return response.json();
+                }
+            )
+            .then(
+                function(informacion){
+                    console.log(informacion);
+                    let trackArray = informacion.data
+
+                    for(let i=0; i<6; i++){
+
+                        let titulo = trackArray[i].title;
+                        let trackId = trackArray[i].id;
+
+                        let single = '<li><a href="track.html?id=' + trackId +'" class="titulo">' + titulo + '</li>'
+
+                        document.querySelector('.titulos-canciones').innerHTML += single;
+                    }
+                }
+            
+            )
             
         }
     )
+
+  
 
 })
