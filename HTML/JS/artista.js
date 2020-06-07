@@ -42,12 +42,14 @@ window.addEventListener("load", function() {
                          let idTrack = topTracks[i].id; 
                          let idAlbum = topTracks[i].album.id;
 
-                         let track = `<img src="` + trackCover + `" alt="track-cover">
+                         let track = `<article class="cancion">
+                                     <img src="` + trackCover + `" alt="track-cover">
                                       <div class="titulo">
                                            <a href="track.html?id=` + idTrack + `"><p>`+ trackTitle + `</p></a>
                                            <a href="detail-album.html?id=` + idAlbum + `"><i>`+ trackAlbum + `</i></a>
-                                      </div>`;
-                         document.querySelector('.cancion').innerHTML += track;
+                                      </div>
+                                    </article>`;
+                         document.querySelector('.cancion-container').innerHTML += track;
                      }
                 })   
         }

@@ -44,8 +44,8 @@ window.addEventListener("load", function() {
                 //document.querySelector('.duracion').innerHTML += minutos + ':' + seconds;
                 //document.querySelector('.artista').innerHTML += artist;
 
-                document.querySelector('.cancion').innerHTML += '<a href="track.html?id=' + idTrack + '"><p>'+ name + '</p></a><p>'+ minutos +':' + seconds + '</p><a href="detail-artista.html?id=' + idAlbum + '"><p>'+ artist +'</p></a>'
-
+                let cancion = '<section class="cancion"><a href="track.html?id=' + idTrack + '"><p>'+ name + '</p></a><p>'+ minutos +':' + seconds + '</p><a href="detail-artista.html?id=' + idAlbum + '"><p>'+ artist +'</p></a></section>'
+                document.querySelector('.canciones-artista').innerHTML += cancion;
             }
             
         

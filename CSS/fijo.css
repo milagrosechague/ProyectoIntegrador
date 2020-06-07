@@ -80,7 +80,6 @@ button i{
 }
 
 footer{
-    margin-top: 20px;
     display: grid;
     grid-template-columns: 2fr 1fr; 
     background-color: rgb(230, 147, 40);
@@ -88,7 +87,7 @@ footer{
 
 .footer-column{
     display: grid;
-    grid-template-rows: 40% 60%;
+    grid-template-rows: 50% 50%;
 }
 .redes{
     display: grid;
@@ -136,14 +135,7 @@ footer ul{
     .space p{
         font-size: 50px;
     }
-    footer{
-        height: 30vh;
-    }
-    .footer-column{
-        display: grid;
-        grid-template-rows: 10vh 20vh;
-        gap: 0px;
-    }
+
     .footer-column p{
         font-size: 25px;
         padding-left: 35px;
@@ -188,18 +180,14 @@ footer ul{
         margin-left: 205px;
         margin-top: 10px;
     }
+    form{
+        width: 100%;
+        display: grid;
+        grid-template-columns: 78% 20%;
+        padding-left: 15px;
+    }
     .space p{
         padding-top: 0px;
-    }
-
-    footer {
-        height: 35vh;
-        box-sizing: border-box;
-    }
-
-    .footer-column{
-        display: grid;
-        grid-template-rows: 15vh 20vh;
     }
 
     .footer-column p{
@@ -209,7 +197,7 @@ footer ul{
     }
     
     .logo-deezer{
-       width: 70%;
+       width: 60%;
        margin-top: 15px;
 }
 }
@@ -232,14 +220,6 @@ footer ul{
         font-size: 40px;
     }
 
-    footer {
-        height: 45vh;
-
-    }
-    .footer-column {
-        display: grid;
-        grid-template-rows: 20vh 25vh;
-    }
     .footer-column p {
         font-size: 50px;}
     

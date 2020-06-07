@@ -21,6 +21,7 @@ window.addEventListener('load', function() {
                  let trackArtist = TracksArray[i].artist.name
                  let trackAlbum = TracksArray[i].album.title
                  let trackDur = TracksArray[i].duration
+                 let img = '<img class="track-img" src="' + trackImg + '" alt="track-image"></img>'
 
                  let idTrack = TracksArray[i].id
                  let idAlbum = TracksArray[i].album.id
@@ -32,12 +33,11 @@ window.addEventListener('load', function() {
                   if(seconds<10){ seconds = '0' + seconds }
 
                  let info = document.querySelector('.track-info').innerHTML += 
-                 `<a href="track.html?id=`+ idTrack + `" class="title"><p>` + trackTitle + `</p></a>
+                 `<div class="img-container">` + img + `</div>
+                 <a href="track.html?id=`+ idTrack + `" class="title"><p>` + trackTitle + `</p></a>
                  <a href="detail-artista.html?id=` + idArtista + `" class="artista"><p>` + trackArtist + `</p></a>
                  <a href="detail-album.html?id=` + idAlbum + `" class="album"><p>` + trackAlbum + `</p></a>
-                 <p class="duracion">` + minutos + `:` + seconds + `</p>`
-
-                 document.querySelector('.track-img').src += trackImg;
+                 <p class="duracion">` + minutos + `:` + seconds + `</p>`  
              }
 
         })
