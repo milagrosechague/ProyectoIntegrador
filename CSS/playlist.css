@@ -39,7 +39,7 @@ h2{
     text-align: center;
     border-bottom: black solid 4px;
 }
-.canciones{
+canciones{
     display: grid;
     grid-template-rows:10% 10% 10% 10% 10% 10% 10% 10% 10% 10%;
     background-color: white;
@@ -64,7 +64,7 @@ h2{
     text-align: center;
     background-color: rgb(230, 147, 40);
 }
-.primer-cancion{
+primer-cancion{
     display: grid;
     grid-template-columns: 33% 33% 33% ;
     text-align: center;
