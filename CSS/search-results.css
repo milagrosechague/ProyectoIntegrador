@@ -1,6 +1,9 @@
 body {
     font-family: "Oswald", sans-serif;
-	background-image: url(../imagenes/music\ notes.jpg);
+	background-color: rgb(46, 40, 59);
+}
+p{
+    color: ivory;
 }
 
 .headings{
@@ -27,13 +30,10 @@ body {
  }
 
  .track{
-    border-bottom: 3px solid black;
+    border-bottom: 3px solid ivory;
  }
  @media only screen and (min-width: 768px){
-     .ul{
-         display: grid;
-         grid-template-rows: 25px 95%;
-     }
+    
     .headings{
          display: grid;
          grid-template-columns: 45% 20% 25% 10%;
@@ -43,7 +43,8 @@ body {
      }
 
      .headings h3{
-         background-color: rgba(230, 148, 40, 0.616);
+         background-color: rgb(26, 21, 36);
+         color: ivory;
          font-size: 30px;
      }
 
@@ -59,10 +60,10 @@ body {
      }
      .track-info{
          display: grid;
-         grid-template-columns: 5% 38% 20% 25% 3%;;
+         grid-template-columns: 47% 19% 26% 3%;
          justify-content: center;
-         align-items: center;
-         gap: 20px;
+         gap: 10px;
+       
      }
  }
 
@@ -73,7 +74,7 @@ body {
      }
      .track-img{
         border-radius: 100px;
-        border: 2px solid black;
+        border: 2px solid ivory;
      }
 
      .track-item{
@@ -91,10 +92,9 @@ body {
      .track-info{
         width: 100%;
         display: grid;
-        grid-template-columns: 5% 35% 20% 25% 10%;
+        grid-template-columns: 5% 39% 21% 23% 10%;
         justify-content: center;
-        align-items: center;
-        gap: 10px;
+        gap: 0px;
     }
    
  }

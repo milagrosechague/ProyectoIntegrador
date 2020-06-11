@@ -1,10 +1,12 @@
 
 body{
-    background-image: url(../imagenes/music\ notes.jpg) ;    
+    background-color: rgb(46, 40, 59) ;    
 }
 h1{
     text-align: center;
     font-family: "Oswald", sans-serif;
+    background-color: rgb(26, 21, 36);
+    color: ivory;
 }
 .artista{
     padding-top: 0px;
@@ -36,13 +38,14 @@ h1{
 
 .billie1{
     border-radius: 50%;
-    border: solid 5px rgb(230, 147, 40);
+    border: solid 5px ivory;
 }
 
 h2{
     display: block;
     text-align: center;
-    background-color: rgb(230, 147, 40);
+    background-color: rgb(26, 21, 36);
+    color: ivory;
 }
 
 b{
@@ -52,6 +55,7 @@ b{
 p{
     font-family: "Oswald", sans-serif;
     font-size: 25px;
+    color: ivory;
 }
 
 i{
@@ -63,7 +67,7 @@ i{
 .cancion{
     display: grid;
     grid-template-columns: 50% 25% 25%;
-    border-bottom: solid 5px black;
+    border-bottom: solid 5px ivory;
 }
 
 @media only screen and (min-width: 768px){

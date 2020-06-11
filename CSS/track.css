@@ -1,15 +1,13 @@
 body{
-    background-image: url(../imagenes/music\ notes.jpg);
+    background-color: rgb(46, 40, 59);
 }
 
 h1{
     text-align: center;
     font-family: "Oswald", sans-serif;
     font-size: 30px;
-    display: inline;
-    background-color: rgba(230, 148, 40, 0.767);
-    border-radius: 15px;
-    margin-left: 20%;
+    background-color: rgb(26, 21, 36);
+    color: ivory;
 }
 
 .todo .track{
@@ -25,13 +23,13 @@ h1{
 
 .track-image{
     display: grid;
-    grid-template-columns: 65%;
+    grid-template-columns: 60%;
     justify-content: center;
     
 }
 
 .trackImage{
-    border: 3px solid black;
+    border: 3px solid ivory;
 }
 
 .info{
@@ -105,10 +103,6 @@ i{
        gap: 20px;
    }
 
-   .track-image{
-    width: 75%;
-
-}
 
 .info p{
     font-size: 35px;
@@ -149,9 +143,7 @@ i{
         grid-template-columns: 40% 40% 20%;
         padding-left: 0px;
     }
-    .track-image{
-        width: 70%;
-    }
+   
     .info p{
     font-size: 22px;
     }
@@ -162,9 +154,6 @@ i{
         font-size: 45px;
     }
   
-    .info{
-        width: 75%;
-    }
     .add{
         padding: 20%;
     }

@@ -43,7 +43,7 @@ window.addEventListener('load', function() {
 
                  track.forEach (function (item){
                     item.addEventListener('mouseover', function(){
-                        this.style.backgroundColor = 'rgba(230, 148, 40, 0.719)';
+                        this.style.backgroundColor = 'black';
 
                     })
                   

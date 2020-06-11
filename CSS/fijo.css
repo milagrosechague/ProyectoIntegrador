@@ -15,7 +15,7 @@ body{
     width: 100%;
     padding-left: 0px;
     align-items: center;
-    background-color: rgb(230, 147, 40);
+    background-color: rgb(26, 21, 36);
     margin-top: 0px;
 }
 .navegacion img{
@@ -31,43 +31,33 @@ li{
     font-family: "Oswald", sans-serif;
 }
 a { text-decoration: none;
-color: #000000;
-font-size: 21px;
+color: ivory;
+
 }
 
-img{
-    display: block;
-    width: 100%;
-}
 .logo{
     height: 100%;
 }
 
 .buscador{
-    display: grid;
-    height: 10vh;
+    display: flex;
     margin-top: 20px;
-
-    border: solid 3px black;
     border-radius: 20px;
-    background-color: white;
+    height: 10vh;
 }
 
 form{
-    width: 100%;
-    display: grid;
-    grid-template-columns: 75% 20%;
-    padding-left: 15px;
+    display: flex;
 }
 
 input{
     border: none;
+    border-radius: 20px;
 }
 
-
 button{
-    height: 10vh;
     border-radius: 20px;
+    
 }
 
 button i{
@@ -82,7 +72,7 @@ button i{
 footer{
     display: grid;
     grid-template-columns: 2fr 1fr; 
-    background-color: rgb(230, 147, 40);
+    background-color: rgb(26, 21, 36);
 }
 
 .footer-column{
@@ -102,7 +92,6 @@ footer{
 
 footer p{
     font-family: "Oswald", sans-serif;
-    font-size: 17px;
     margin-bottom: 2px;
 }
 footer ul{
@@ -175,16 +164,9 @@ footer ul{
         font-size: 40px;
     }
 
-    .buscador{
-        width: 60%;
-        margin-left: 205px;
-        margin-top: 10px;
-    }
+   
     form{
         width: 100%;
-        display: grid;
-        grid-template-columns: 78% 20%;
-        padding-left: 15px;
     }
     .space p{
         padding-top: 0px;
@@ -202,38 +184,13 @@ footer ul{
 }
 }
 
-@media only screen and (min-width: 1440px){
-
-    .buscador{
-        margin-left: 300px;
-    }
-}
 
 @media only screen and (min-width: 1690px){
-
-    .container{
-        margin-left: 200px;
-        width: 80%;
-    }
-
-    p{
-        font-size: 40px;
-    }
-
-    .footer-column p {
-        font-size: 50px;}
-    
-     footer li {
-            font-size: 45px;
-        } 
-     .logo-deezer {
-            width: 65%;
-        }
+p{
+    font-size: 30px;
 }
-
-@media only screen and (min-width: 2000px){
-.container {
-    margin-left: 500px;
-    width: 70%;
+section h2 {
+    font-size: 55px;
 }
 }
+
