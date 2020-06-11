@@ -63,6 +63,10 @@ window.addEventListener("load", function(){
             //guardando lista en local storage
             let playlistStorage = JSON.stringify(playlist);
             localStorage.setItem('playlist', playlistStorage);
+
+            let playlistEnStorge = JSON.stringify(playlist);
+            localStorage.setItem('.playlist',playlistEnStorge);
+            console.log(playlistEnStorge);
             })
 
             //seccion canciones de artista
