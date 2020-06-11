@@ -206,5 +206,15 @@ p{
 }
 
 @media only screen and (min-width: 1690px){
+    body{
+        background-image: url(../imagenes/music\ notes.jpg);
+    }
+    .contenido{
+        margin-top: 50px;
+        background-color: rgba(248, 248, 248, 0.808);
+    }
+    .titulos-top{
+        margin-top: 0px;
     
+    }
 }

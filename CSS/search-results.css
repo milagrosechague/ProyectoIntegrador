@@ -23,7 +23,6 @@ body {
      display: grid;
      grid-template-columns: 70% 30%;
      gap: 0px;
-     border-radius: 50px;
      
  }
 
@@ -83,6 +82,21 @@ body {
          gap: 0px;
          align-items: center;
      }
+
+     .ul {
+        display: grid;
+        grid-template-rows: 90px 95%;
+    }
+
+     .track-info{
+        width: 100%;
+        display: grid;
+        grid-template-columns: 5% 35% 20% 25% 10%;
+        justify-content: center;
+        align-items: center;
+        gap: 10px;
+    }
+   
  }
 
 

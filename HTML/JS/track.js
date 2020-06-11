@@ -80,6 +80,12 @@ window.addEventListener("load", function(){
                 function(informacion){
                     console.log(informacion);
                     let trackArray = informacion.data
+                    let nuevoArray = trackArray.filter(function (track) {
+                        console.log(idTrack);
+                        return track.id != idTrack
+                    })
+                    console.log(nuevoArray);
+                    
 
                     for(let i=0; i<6; i++){
 

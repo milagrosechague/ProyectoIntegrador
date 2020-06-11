@@ -32,12 +32,12 @@ window.addEventListener('load', function() {
                   let seconds = trackDur %60
                   if(seconds<10){ seconds = '0' + seconds }
 
-                 document.querySelector('.track-info').innerHTML += 
-                 `<div class="img-container">` + img + `</div>
+                 document.querySelector('.track-container').innerHTML += 
+                 `<article class="track-info"><div class="img-container">` + img + `</div>
                  <a href="track.html?id=`+ idTrack + `" class="title"><p>` + trackTitle + `</p></a>
                  <a href="detail-artista.html?id=` + idArtista + `" class="artista"><p>` + trackArtist + `</p></a>
                  <a href="detail-album.html?id=` + idAlbum + `" class="album"><p>` + trackAlbum + `</p></a>
-                 <p class="duracion">` + minutos + `:` + seconds + `</p>`  
+                 <p class="duracion">` + minutos + `:` + seconds + `</p></article>`  
 
                  let track = document.querySelectorAll('.track-info');
 
