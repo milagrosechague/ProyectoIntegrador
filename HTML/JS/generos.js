@@ -30,7 +30,7 @@ window.addEventListener("load", function() {
                imagen.src = img;
                
 
-               document.querySelector('.contenido').innerHTML += titulo + imagen ;
+               document.querySelector('.contenido').innerHTML += '<article class="genero"><h2>' + nombre + ' </h2><img src="'+ img + '" alt="rock" class="img-genero">  </article>';
                 
 
             }

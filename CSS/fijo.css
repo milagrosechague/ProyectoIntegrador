@@ -41,6 +41,7 @@ color: ivory;
 
 .buscador{
     display: flex;
+    position: relative;
     margin-top: 20px;
     border-radius: 20px;
     height: 10vh;
@@ -164,10 +165,6 @@ footer ul{
         font-size: 40px;
     }
 
-   
-    form{
-        width: 100%;
-    }
     .space p{
         padding-top: 0px;
     }

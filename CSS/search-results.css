@@ -70,11 +70,11 @@ p{
  @media only screen and (min-width: 1024px){
      .img-container{
          display: block;
-        width: 100%;
      }
      .track-img{
         border-radius: 100px;
         border: 2px solid ivory;
+        width: 90%;
      }
 
      .track-item{
