@@ -52,8 +52,7 @@ window.addEventListener("load", function(){
                 let indiceArray = playlist.indexOf(idTrack);
                 playlist.splice(indiceArray, 1);
                 document.querySelector('i').innerHTML= '+';
-             
-                console.log(playlist);
+               // console.log(playlist);
              
             }else{
                 playlist.push(idTrack);
@@ -64,10 +63,8 @@ window.addEventListener("load", function(){
             let playlistStorage = JSON.stringify(playlist);
             localStorage.setItem('playlist', playlistStorage);
 
-            let playlistEnStorge = JSON.stringify(playlist);
-            localStorage.setItem('.playlist',playlistEnStorge);
             console.log(playlistEnStorge);
-            })
+            });
 
             //seccion canciones de artista
 
@@ -93,8 +90,8 @@ window.addEventListener("load", function(){
 
                     for(let i=0; i<6; i++){
 
-                        let titulo = trackArray[i].title;
-                        let trackId = trackArray[i].id;
+                        let titulo = nuevoArray[i].title;
+                        let trackId = nuevoArray[i].id;
 
                         let single = '<li><a href="track.html?id=' + trackId +'" class="titulo">' + titulo + '</li>'
 

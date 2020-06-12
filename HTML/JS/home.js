@@ -48,7 +48,7 @@ window.addEventListener("load", function() {
              
             let trackTitle = trackList[i].title
              let trackArtist = trackList[i].artist.name
-             let trackImage = trackList[i].artist.picture
+             let trackImage = trackList[i].artist.picture_big
              let idTrack = trackList[i].id
 
              let trackItem = '<a href="track.html?id=' + idTrack + '"><p class= "item">' + trackTitle + ', ' + trackArtist + '</p></a>'
@@ -66,7 +66,7 @@ window.addEventListener("load", function() {
            for (let i=0; i<4; i++){
                let albumTitle = albumList[i].title;
                let albumArtist = albumList[i].artist.name;
-               let albumImage = albumList[i].cover;
+               let albumImage = albumList[i].cover_big;
                let idAlbum = albumList[i].id;
         
                let coverAlbum = '<img class="img-album" src="' + albumImage + '" alt="cover">'
@@ -83,7 +83,7 @@ window.addEventListener("load", function() {
 
            for (let i=0; i<4; i++){
             let artistName = artistList[i].name;
-            let artistImage = artistList [i].picture;
+            let artistImage = artistList [i].picture_big;
             let idArtist = artistList[i].id;
 
             let artistItem = '<a href="detail-artista.html?id=' + idArtist + '"><p class="item">' + artistName + '</p></a>'

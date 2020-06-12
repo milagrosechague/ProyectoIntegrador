@@ -100,7 +100,9 @@ h2{
         display: grid;
         grid-template-columns: 50% 50%;
         gap: 10px;
+        align-items: center;
     }
+
 .info-container img{
     display: block;
     width: 100%;
@@ -110,12 +112,14 @@ h2{
     display: grid;
     grid-template-rows: 25% 25% 25% 25%;
     gap: 10px;
+    align-items: center;
 }
 
 .fotoArtistas{
     display: grid;
-    grid-template-rows: 100% 100% 100% 100%;
+    grid-template-rows: 25% 25% 25% 25%;
     gap: 10px;
+    align-items: center;
 }
 .imgContainer img{
     border-radius: 30px;
@@ -127,26 +131,30 @@ h2{
 
 .cover{
     display: grid;
-    grid-template-rows: 100% 100% 100% 100%;
+    grid-template-rows: 25% 25% 25% 25%;
     gap: 10px;
+    align-items: center;
 }
 
 .nombresContainer {
         display: grid;
         grid-template-rows: 25% 25% 25% 25%;
         gap: 10px;
+        align-items: center;
 }
 
 .nombres{
         display: grid;
-        grid-template-rows: 100% 100% 100% 100%;
+        grid-template-rows: 25% 25% 25% 25%;
         gap: 10px;
+        align-items: center;
 }
 
 .artistas{
         display: grid;
-        grid-template-rows: 100% 100% 100% 100%;
+        grid-template-rows: 25% 25% 25% 25%;
         gap: 10px;
+        align-items: center;
 }
 
 p{
@@ -243,7 +251,6 @@ p{
     .nombresContainer {
         display: grid;
         gap: 40px;
-        padding-top: 35px;
     }
     .cover{
         display: grid;
@@ -253,12 +260,10 @@ p{
     .nombres{
         display: grid;
         gap: 40px;
-        padding-top: 0px;
     }
     .artistas{
         display: grid;
         gap: 40px;
-        padding-top: 35px;
     }
 
 }
