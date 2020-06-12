@@ -93,11 +93,21 @@ window.addEventListener("load", function() {
             document.querySelector('.artistas').innerHTML += artistItem;
             console.log(artistName);
            }
+          
+          // let item = document.querySelectorAll('.item')
+          // let difference = 2
            
-        }
 
-
-    )
+          // item.forEach(function(cada){
+           //    cada.addEventListener('mouseover', function (){
+           //        obj.style.fontSize = size*difference
+          //     })
+               
+          //     cada.addEventListener('mouseout', function(){
+          //  this.style.backgroundColor= 'rgba(230, 148, 40, 0.000)';
+          //  })
+        //})
+        })
 
     .catch (
         function(error){
@@ -107,4 +117,3 @@ window.addEventListener("load", function() {
     )
 
 })
-

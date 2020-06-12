@@ -23,11 +23,11 @@ window.addEventListener("load", function(){
 
             let album = info.album.title
             let idAlbum = info.album.id
-            document.querySelector('.album').innerHTML = '<a href="detail-album.html?id=' + idAlbum + '"><p>'+ album + '</p></a>'; 
+            document.querySelector('.album').innerHTML = '<a href="detail-album.html?id=' + idAlbum + '">'+ album + '</a>'; 
 
             let artista = info.artist.name
             let idArtista = info.artist.id
-            document.querySelector('.artist').innerHTML = '<a href="detail-artista.html?id=' + idArtista + '"><p>'+ artista + '</p></a>';
+            document.querySelector('.artist').innerHTML = '<a href="detail-artista.html?id=' + idArtista + '">'+ artista + '</a>';
             document.querySelector('.mas').innerHTML = 'Mas Canciones de '+ artista;
           
             //Recupero datos del storage
