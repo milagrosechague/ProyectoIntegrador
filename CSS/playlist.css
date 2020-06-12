@@ -1,13 +1,17 @@
+body{
+    background-color: rgb(46, 40, 59) ;
+}
 .container{
     display: grid;
-    background-image: url(../imagenes/music\ notes.jpg);
+    background-color: rgb(46, 40, 59);
 }
 
 h1{
     font-family: "Oswald", sans-serif;
-        background-color: rgb(230, 147, 40);
+        background-color: rgb(46, 40, 59);
         text-align: center;
         font-size: 30px;
+        color: ivory;
 }       
 .buscador{
     text-align: end;
@@ -29,15 +33,16 @@ h1{
 
 h2{
     font-family: "Oswald", sans-serif;
-    color: solid black;
     text-align: center;
     font-size: 30px;
+    color: ivory;
 }
 .modos-canciones{
     display: grid;
     grid-template-columns: 33% 33% 33%;
     text-align: center;
     border-bottom: black solid 4px;
+    color: ivory;
 }
 canciones{
     display: grid;
@@ -46,23 +51,35 @@ canciones{
 }
 .opciones-canciones{
     display: grid;
-    grid-template-columns: 50% 50%;
     align-items: center;
     margin-bottom: 25px;
+    color: ivory;
+    font-family: "Oswald", sans-serif;
+}
+.opciones-canciones3{
+    display: grid;
+    align-items: center;
+    margin-bottom: 25px;
+    color: ivory;
+    background-color: rgb(26, 21, 36);
+    font-size: 40px;
+    font-family: "Oswald", sans-serif;
 }
 .add-song{
     margin-left: 20px;
     margin-right: 20px;
     font-family: "Oswald", sans-serif;
     text-align: center;
-    background-color: rgb(230, 147, 40);
+    background-color: rgb(26, 21, 36);
+    color: ivory;
 }   
 .shuffle-mode{
     margin-left: 20px;
     margin-right: 20px;
     font-family: "Oswald", sans-serif;
     text-align: center;
-    background-color: rgb(230, 147, 40);
+    background-color: rgb(26, 21, 36);
+    color: ivory;
 }
 primer-cancion{
     display: grid;
@@ -79,11 +96,13 @@ strong{
     text-align: center;
     font-size: 20px;
     font-family: "Oswald", sans-serif;
+    color: ivory;
 }
 .estilo{
     font-size: 20px;
     font-family: "Oswald", sans-serif;
     text-align: center;
+    color: ivory;
 }
 .album{
     display: none;
