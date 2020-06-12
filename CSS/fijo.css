@@ -39,26 +39,23 @@ color: ivory;
     height: 100%;
 }
 
-.buscador{
-    display: flex;
-    position: relative;
-    margin-top: 20px;
-    border-radius: 20px;
-    height: 10vh;
-}
+
 
 form{
-    display: flex;
+        display: flex;
+        border-radius: 20px;
+        height: 10vh;
+        justify-content: center;
 }
 
 input{
     border: none;
     border-radius: 20px;
+    min-width: 200px;
 }
 
 button{
     border-radius: 20px;
-    
 }
 
 button i{
@@ -90,7 +87,13 @@ footer{
     margin-left: 8px;
     border-radius: 50%;
 }
-
+.usuario{
+    display: none;
+    width: 50%;
+    background-color: ivory;
+    color: black;
+    text-align: center;
+}
 footer p{
     font-family: "Oswald", sans-serif;
     margin-bottom: 2px;
@@ -169,6 +172,12 @@ footer ul{
         padding-top: 0px;
     }
 
+    input{
+        border: none;
+        border-radius: 20px;
+        min-width: 400px;
+    }
+
     .footer-column p{
         font-size: 28px;
         padding-left: 53px;
@@ -188,6 +197,22 @@ p{
 }
 section h2 {
     font-size: 55px;
+}
+input{
+    min-width: 900px;
+    font-size: 50px;
+}
+button{
+    width: 100px;
+}
+.redes img {
+    width: 21%;}
+
+.footer-column p{
+    font-size: 50px;
+}
+footer li {
+    font-size: 50px;
 }
 }
 

@@ -14,3 +14,23 @@ navegacion.forEach (function (item){
       this.style.textDecoration = 'none';
   })
 })
+
+
+let plataformas = document.querySelectorAll('.plataformas')
+
+//plataformas.onmouseover = (function () {
+//  let redSocial = document.querySelector('.usuario');
+//  redSocial.style.display = 'block';
+//})
+
+plataformas.forEach(function(red){
+  let redSocial = document.querySelector('.usuario');
+  
+  red.addEventListener('mouseover', function(){
+    redSocial.style.display = 'block';
+  })
+
+  red.addEventListener('mouseout', function(){
+    redSocial.style.display = 'none';
+  })
+})

@@ -30,6 +30,7 @@ h1{
 
 .info-artista li{
     font-size: 25px;
+    color: ivory;
 }
 
 .canciones-artista li{
@@ -38,7 +39,8 @@ h1{
 
 .billie1{
     border-radius: 50%;
-    border: solid 5px ivory;
+    border: solid 5px rgb(81, 185, 226);
+    width: 100%;
 }
 
 h2{
@@ -62,6 +64,11 @@ i{
     font-family: "Oswald", sans-serif;
     font-size: 20px;
     margin-top: 0px;
+}
+.headings{
+    display: grid;
+    grid-template-columns: 50% 25% 25%;
+    
 }
 
 .cancion{
@@ -95,6 +102,9 @@ i{
 @media only screen and (min-width: 1024px){
     h1{
         font-size: 70px;
+    }
+    .trackImage {
+        width: 40%;
     }
 
     .perfil-artista{

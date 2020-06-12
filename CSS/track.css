@@ -29,7 +29,8 @@ h1{
 }
 
 .trackImage{
-    border: 3px solid ivory;
+    border: 3px solid rgb(81, 185, 226);
+    width: 100%;
 }
 
 .info{
@@ -163,4 +164,10 @@ i{
         grid-template-rows: 70% 10% 100px;
         align-items: center;
     }
+
+    .track-image {
+        display: grid;
+        grid-template-columns: 35%;
 }
+}
+

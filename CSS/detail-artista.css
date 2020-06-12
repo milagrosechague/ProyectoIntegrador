@@ -28,6 +28,7 @@ h1{
 
 .info-artista li{
     font-size: 25px;
+    color: ivory;
 }
 
 .canciones-artista li{
@@ -36,7 +37,8 @@ h1{
 
 .billie1{
     border-radius: 50%;
-    border: solid 5px ivory;
+    border: solid 5px rgb(81, 185, 226);
+    width: 100%;
 }
 
 h2{

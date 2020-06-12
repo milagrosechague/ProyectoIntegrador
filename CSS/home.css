@@ -21,7 +21,6 @@ body{
     position: absolute;
     top: 50%;
     width: auto;
-    margin-top: -22px;
     padding: 16px;
     transition: 0.6s ease;
     border-radius: 0 3px 3px 0;
@@ -190,15 +189,26 @@ p{
     h1{
         font-size: 70px;
     }
+    /*caousel*/
     .slideshow-container {
         width: 60%;
         position: relative;
         margin: auto;
-      }
+    }
+    .prev, .next {
+        /* cursor: pointer; */
+        font-size: 40px;
+    }
+    .dot {
+        cursor: pointer;
+        height: 30px;
+        width: 30px;
+    }
     
-p{
+    p{
     font-size: 25px;
-}
+    }
+
     .contenido{
         display: grid;
         grid-template-columns: 1fr 1fr 1fr;

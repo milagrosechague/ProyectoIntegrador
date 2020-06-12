@@ -29,8 +29,10 @@ h2{
     margin-right: 10px;
 }
 
-.contenido div img{
+.genero img{
     border-radius: 20%;
+    width: 100%;
+    border: 5px solid rgb(81, 185, 226);
 }
 
 @media only screen and (min-width: 768px){

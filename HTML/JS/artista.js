@@ -51,6 +51,20 @@ window.addEventListener("load", function() {
                                     </article>`;
                          document.querySelector('.cancion-container').innerHTML += track;
                      }
+
+                     let track = document.querySelectorAll('.cancion');
+
+                     track.forEach (function (item){
+                        item.addEventListener('mouseover', function(){
+                            this.style.backgroundColor = 'black';
+    
+                        })
+                      
+                        item.addEventListener('mouseout', function(){
+                            this.style.backgroundColor= 'rgb(26, 21, 36)';
+                        })
+                      })
+                
                 })   
         }
     )

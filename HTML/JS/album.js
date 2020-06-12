@@ -47,6 +47,19 @@ window.addEventListener("load", function() {
                 let cancion = '<section class="cancion"><a href="track.html?id=' + idTrack + '"><p>'+ name + '</p></a><p>'+ minutos +':' + seconds + '</p><a href="detail-artista.html?id=' + idAlbum + '"><p>'+ artist +'</p></a></section>'
                 document.querySelector('.canciones-artista').innerHTML += cancion;
             }
+
+            let track = document.querySelectorAll('.cancion');
+
+                 track.forEach (function (item){
+                    item.addEventListener('mouseover', function(){
+                        this.style.backgroundColor = 'black';
+
+                    })
+                  
+                    item.addEventListener('mouseout', function(){
+                        this.style.backgroundColor= 'rgba(230, 148, 40, 0.000)';
+                    })
+                  })
             
         
 
