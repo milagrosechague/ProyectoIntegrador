@@ -3,9 +3,10 @@ let datos = new URLSearchParams (queryString);
 let idTrack= datos.get('id');
 
 let recuperoStorage = localStorage.getItem('playlist');
-if (recuperoStorage == null){
+if (recuperoStorage == null || recuperoStorage =='[]'){
     playlist = [];
-
+    var mensaje = 'no hay canciones en tu playlist';
+    alert(mensaje)
 }
 else{
     playlist = JSON.parse(recuperoStorage);
@@ -36,6 +37,16 @@ function mostrarTrack(idTrack){
         playlistClass.innerHTML += '<li>' + datos.duration + '</li>';
         playlistClass.innerHTML += '<li>' + datos.artist + '</li>';
         playlistClass.innerHTML += '<li>' + datos.album + '</li>';
+
+        let player = document.querySelector('iframe')
+        player.src = 'https://www.deezer.com/plugins/player?format=square&autoplay=false&playlist=false&width=300&height=300&color=007FEB&layout=&size=medium&type=tracks&id=' + idTrack + '&app_id=1'
+
+        for (let i = 0; i < 4; i++) {
+            let imagenTrack = document.querySelector('.fotosInicio');
+            let imagenTrack = datos[i].artist.picture_medium
+            fotosInicio = '<img src="' + imagenTrack + '" alt="artista" >'
+        }
+
     })
     .catch(function(error){
         console.log(error);
@@ -54,10 +65,10 @@ fetch(url)
    })
    .then(function(datosSearch){
        console.log(datosSearch)
-       let lista = document.querySelector('resultados')
-       let resultados = datosSearch.data;
-       resultados.forEach(function(resultado){
-           lista.innerHTML += '<li>' + resultado.name + '</li>'
+       let buscador = document.querySelector('.buscador')
+       let result = datosSearch.data;
+       result.forEach(function(resultado){
+           buscador.innerHTML += '<li>' + resultado.name + '</li>'
        });
    })
    .catch(function(error){
