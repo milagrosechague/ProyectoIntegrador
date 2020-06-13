@@ -95,66 +95,48 @@ h2{
         font-family: "Oswald", sans-serif;
 }
 
-.info-container{ 
+.track-container{ 
         display: grid;
-        grid-template-columns: 50% 50%;
+        grid-template-columns: 1fr 1fr;
         gap: 10px;
         align-items: center;
     }
 
-.info-container img{
+.artista-container{ 
+        display: grid;
+        grid-template-columns: 1fr 1fr;
+        gap: 10px;
+        align-items: center;
+    }
+.album-container{ 
+        display: grid;
+        grid-template-columns: 1fr 1fr;
+        gap: 10px;
+        align-items: center;
+    }
+
+.track-container img{
     display: block;
     width: 100%;
-}
-
-.imgContainer{
-    display: grid;
-    grid-template-rows: 25% 25% 25% 25%;
-    gap: 10px;
-    align-items: center;
-}
-
-.fotoArtistas{
-    display: grid;
-    grid-template-rows: 25% 25% 25% 25%;
-    gap: 10px;
-    align-items: center;
-}
-.imgContainer img{
     border-radius: 30px;
+}
+
+.artista-container img{
+    display: block;
+    width: 100%;
+    border-radius: 50%;
+}
+
+.album-container img{
+    display: block;
+    width: 100%;
 }
 
 .fotoArtistas .imgArtista{
     border-radius: 55%;
 }
 
-.cover{
-    display: grid;
-    grid-template-rows: 25% 25% 25% 25%;
-    gap: 10px;
-    align-items: center;
-}
 
-.nombresContainer {
-        display: grid;
-        grid-template-rows: 25% 25% 25% 25%;
-        gap: 10px;
-        align-items: center;
-}
-
-.nombres{
-        display: grid;
-        grid-template-rows: 25% 25% 25% 25%;
-        gap: 10px;
-        align-items: center;
-}
-
-.artistas{
-        display: grid;
-        grid-template-rows: 25% 25% 25% 25%;
-        gap: 10px;
-        align-items: center;
-}
 
 p{
         font-size: 100%;

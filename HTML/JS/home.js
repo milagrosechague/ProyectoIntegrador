@@ -54,8 +54,7 @@ window.addEventListener("load", function() {
              let trackItem = '<a href="track.html?id=' + idTrack + '"><p class= "item">' + trackTitle + ', ' + trackArtist + '</p></a>'
              let imageTrack = '<img src="' + trackImage + '" alt="artista" >'
 
-             document.querySelector('.imgContainer').innerHTML += imageTrack;
-             document.querySelector('.nombresContainer').innerHTML += trackItem;
+             document.querySelector('.track-container').innerHTML += imageTrack + trackItem;
              console.log(trackArtist);
              
          }
@@ -72,8 +71,7 @@ window.addEventListener("load", function() {
                let coverAlbum = '<img class="img-album" src="' + albumImage + '" alt="cover">'
                let albumItem = '<a href="detail-album.html?id=' + idAlbum + '"><p class="item">' + albumTitle + ', ' + albumArtist + '</p></a>'
                
-               document.querySelector('.cover').innerHTML += coverAlbum;
-               document.querySelector('.nombres').innerHTML += albumItem;
+               document.querySelector('.album-container').innerHTML += coverAlbum + albumItem;
                console.log(albumTitle);
                
            }
@@ -89,8 +87,8 @@ window.addEventListener("load", function() {
             let artistItem = '<a href="detail-artista.html?id=' + idArtist + '"><p class="item">' + artistName + '</p></a>'
             let imageArtist = '<img class="imgArtista" src="' + artistImage + '" alt=artista >'
 
-            document.querySelector('.fotoArtistas').innerHTML += imageArtist;
-            document.querySelector('.artistas').innerHTML += artistItem;
+            document.querySelector('.artista-container').innerHTML += imageArtist + artistItem;
+           
             console.log(artistName);
            }
           

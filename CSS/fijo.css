@@ -43,19 +43,19 @@ color: ivory;
 
 form{
         display: flex;
-        border-radius: 20px;
+       
         height: 10vh;
         justify-content: center;
 }
 
 input{
     border: none;
-    border-radius: 20px;
+    border-radius: 20px 0 0 20px;
     min-width: 200px;
 }
 
 button{
-    border-radius: 20px;
+    border-radius: 0 20px 20px 0;
 }
 
 button i{
@@ -97,6 +97,7 @@ footer{
 footer p{
     font-family: "Oswald", sans-serif;
     margin-bottom: 2px;
+    color: ivory;
 }
 footer ul{
     align-items: center;
@@ -174,7 +175,6 @@ footer ul{
 
     input{
         border: none;
-        border-radius: 20px;
         min-width: 400px;
     }
 
