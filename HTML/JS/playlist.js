@@ -2,9 +2,6 @@ let queryString = location.search;
 let datos = new URLSearchParams (queryString);
 let idTrack= datos.get('id');
 
-let proxy = 'https://cors-anywhere.herokuapp.com/';
-let url = proxy + "https://api.deezer.com/tracks/" + idTrack
-
 let recuperoStorage = localStorage.getItem('playlist');
 if (recuperoStorage == null){
     playlist = [];
@@ -22,23 +19,47 @@ function mostrarTrack(idTrack){
     let proxy = 'https://cors-anywhere.herokuapp.com/';
     let url = proxy + "https://api.deezer.com/tracks/" + idTrack;
 
+
     fetch(url)
     .then(function(response){
             return response.json();
         })
 
     .then(function (datos) { 
+        console.log(datos.title);  
             console.log(datos.title);  
+        console.log(datos.title);  
+        let resultados = datos.data; 
             let resultados = datos.data; 
-            playlistClass.innerHTML += '<li>' + datos.title + '</li>';
- 
-            
-
-            let player = document.querySelector('iframe')
-            player.src = 'https://www.deezer.com/plugins/player?format=classic&autoplay=false&playlist=true&width=700&height=350&color=007FEB&layout=dark&size=medium&type=tracks&id='+ idTrack +'&app_id=1'
-        })
+        let resultados = datos.data; 
+        playlistClass.innerHTML += '<li>' + datos.title + '</li>';
+        playlistClass.innerHTML += '<li>' + datos.duration + '</li>';
+        playlistClass.innerHTML += '<li>' + datos.artist + '</li>';
+        playlistClass.innerHTML += '<li>' + datos.album + '</li>';
+    })
     .catch(function(error){
         console.log(error);
     })
     return playlistClass;
 }
+let queryString = location.search;
+let datosSearch = new URLSearchParams (queryString);
+let search= datosSearch.get('search');
+
+let proxy = 'https://cors-anywhere.herokuapp.com/';
+let url = proxy + "https://api.deezer.com/search/tracks?q=" + search;
+fetch(url)
+   .then(function(response){
+       return response.json()
+   })
+   .then(function(datosSearch){
+       console.log(datosSearch)
+       let lista = document.querySelector('resultados')
+       let resultados = datosSearch.data;
+       resultados.forEach(function(resultado){
+           lista.innerHTML += '<li>' + resultado.name + '</li>'
+       });
+   })
+   .catch(function(error){
+       console.log(error)
+   })
