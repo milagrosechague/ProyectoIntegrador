@@ -11,8 +11,6 @@ if (recuperoStorage == null || recuperoStorage =='[]'){
 else{
     playlist = JSON.parse(recuperoStorage);
 }
-let playlistClass = document.querySelector('.playlistClass');
-
 playlist.forEach(function(idTrack){
     mostrarTrack(idTrack);
 });
@@ -27,33 +25,29 @@ function mostrarTrack(idTrack){
         })
 
     .then(function (datos) { 
-        console.log(datos.title);  
-            console.log(datos.title);  
-        console.log(datos.title);  
+        console.log(datos);    
         let resultados = datos.data; 
-            let resultados = datos.data; 
-        let resultados = datos.data; 
-        playlistClass.innerHTML += '<li>' + datos.title + '</li>';
-        playlistClass.innerHTML += '<li>' + datos.duration + '</li>';
-        playlistClass.innerHTML += '<li>' + datos.artist + '</li>';
-        playlistClass.innerHTML += '<li>' + datos.album + '</li>';
-
+        let playlistClass = document.querySelector('.playlistClass');
+        playlistClass.innerHTML += `<li>` + resultados.title + `</li>`
+                                   `<li>` + resultados.duration + `</li>`
+                                   `<li>` + resultados.artist.name + `</li>`
+                                   `<li>` + resultados.album + `</li>`;
+                                   
         let player = document.querySelector('iframe')
         player.src = 'https://www.deezer.com/plugins/player?format=square&autoplay=false&playlist=false&width=300&height=300&color=007FEB&layout=&size=medium&type=tracks&id=' + idTrack + '&app_id=1'
 
         for (let i = 0; i < 4; i++) {
             let imagenTrack = document.querySelector('.fotosInicio');
-            let imagenTrack = datos[i].artist.picture_medium
-            fotosInicio = '<img src="' + imagenTrack + '" alt="artista" >'
+            imagenTrack.src = datos[i].artist.picture_medium
         }
 
     })
     .catch(function(error){
         console.log(error);
     })
-    return playlistClass;
+
 }
-let queryString = location.search;
+
 let datosSearch = new URLSearchParams (queryString);
 let search= datosSearch.get('search');
 
