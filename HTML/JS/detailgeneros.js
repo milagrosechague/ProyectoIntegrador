@@ -15,8 +15,16 @@ fetch(url)
     .then(function (dgenero) { 
         console.log(dgenero);
         let xyz = dgenero.data; 
-        let detalleGenero = document.querySelector("h1")
-            detalleGenero.innnerHTML = xyz[i].name ;
+
+        for (let i= 0; i<10; i++) {
+
+            let artista = xyz[i].name
+
+            let detalleGenero = document.querySelector(".detalleGenero")
+            detalleGenero.innerHTML += '<li>' + artista + '</li>'
+
+            
+        }
  
     })
     .catch(function(error){
