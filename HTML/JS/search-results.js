@@ -1,15 +1,28 @@
+const spinner = document.getElementById("spinner");
+
+    function showSpinner() {
+         spinner.className = "show";
+         setTimeout(() => {
+         spinner.className = spinner.className.replace("show", "");
+        }, 5000);
+    }
+
+
+
 window.addEventListener('load', function() {
 
-    let queryString = new URLSearchParams(location.search)
-    let loBuscado = queryString.get("search");
+     showSpinner()
 
-    fetch('https://cors-anywhere.herokuapp.com/https://api.deezer.com/search?q=' + loBuscado)
-    .then(
+      let queryString = new URLSearchParams(location.search)
+      let loBuscado = queryString.get("search");
+
+      fetch('https://cors-anywhere.herokuapp.com/https://api.deezer.com/search?q=' + loBuscado)
+      .then(
         function(respuesta) {
             return respuesta.json();            
         }
-    )
-    .then(
+       )
+       .then(
         function(info) {
              console.log(info)
 
@@ -56,3 +69,5 @@ window.addEventListener('load', function() {
 
         })
     })
+
+
