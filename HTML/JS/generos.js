@@ -22,7 +22,7 @@ window.addEventListener("load", function() {
             for (let i=0; i<arrayGeneros.length; i++){
                 let img = arrayGeneros[i].picture_xl
                 let nombre = arrayGeneros[i].name
-
+                let idGenero = arrayGeneros [i].id 
                let titulo = document.querySelector('h2');
                titulo.innerHTML = nombre;
 
@@ -30,7 +30,7 @@ window.addEventListener("load", function() {
                imagen.src = img;
                
 
-               document.querySelector('.contenido').innerHTML += '<article class="genero"><h2>' + nombre + ' </h2><img src="'+ img + '" alt="rock" class="img-genero">  </article>';
+               document.querySelector('.contenido').innerHTML += '<article class="genero"> <a href = "detailgeneros.html?id='+ idGenero + ' " > <h2>' + nombre + ' </h2> </a> <img src="'+ img + '" alt="rock" class="img-genero">  </article>';
                 
 
             }

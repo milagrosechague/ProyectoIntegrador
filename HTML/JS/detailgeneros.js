@@ -1,9 +1,10 @@
 window.addEventListener("load", function() {
+    let queryString = location.search;
+    let datos = new URLSearchParams(queryString);
+    let idGenero = datos.get('id');
 
 let proxy = 'https://cors-anywhere.herokuapp.com/';
-let url = proxy + "https://api.deezer.com/genre/idgenero/artists"
-
-let detalleGenero = document.querySelector(".detalleGenero")
+let url = proxy + "https://api.deezer.com/genre/" + idGenero + "/artists"
 
 fetch(url)
     .then(function(response){
@@ -14,10 +15,11 @@ fetch(url)
     .then(function (dgenero) { 
         console.log(dgenero);
         let xyz = dgenero.data; 
-        for(let i=0; i<10; i++) {
-            detalleGenero.innnerHTML += '<li>'+ xyz[i].type +  + xyz[i].id + xyz[i].name + '</li>' ;
-        }    
+        let detalleGenero = document.querySelector("h1")
+            detalleGenero.innnerHTML = xyz[i].name ;
+ 
     })
     .catch(function(error){
         console.log(error);
     })
+})
