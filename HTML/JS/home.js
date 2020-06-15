@@ -52,7 +52,7 @@ window.addEventListener("load", function() {
              let idTrack = trackList[i].id
 
              let trackItem = '<a href="track.html?id=' + idTrack + '"><p class= "item">' + trackTitle + ', ' + trackArtist + '</p></a>'
-             let imageTrack = '<img src="' + trackImage + '" alt="artista" >'
+             let imageTrack = '<a href="track.html?id=' + idTrack + '"><img src="' + trackImage + '" alt="artista" ></a>'
 
              document.querySelector('.track-container').innerHTML += imageTrack + trackItem;
              console.log(trackArtist);
@@ -68,7 +68,7 @@ window.addEventListener("load", function() {
                let albumImage = albumList[i].cover_big;
                let idAlbum = albumList[i].id;
         
-               let coverAlbum = '<img class="img-album" src="' + albumImage + '" alt="cover">'
+               let coverAlbum = '<a href="detail-album.html?id=' + idAlbum + '"><img class="img-album" src="' + albumImage + '" alt="cover"></a>'
                let albumItem = '<a href="detail-album.html?id=' + idAlbum + '"><p class="item">' + albumTitle + ', ' + albumArtist + '</p></a>'
                
                document.querySelector('.album-container').innerHTML += coverAlbum + albumItem;
@@ -85,7 +85,7 @@ window.addEventListener("load", function() {
             let idArtist = artistList[i].id;
 
             let artistItem = '<a href="detail-artista.html?id=' + idArtist + '"><p class="item">' + artistName + '</p></a>'
-            let imageArtist = '<img class="imgArtista" src="' + artistImage + '" alt=artista >'
+            let imageArtist = '<a href="detail-artista.html?id=' + idArtist + '"><img class="imgArtista" src="' + artistImage + '" alt=artista ></a>'
 
             document.querySelector('.artista-container').innerHTML += imageArtist + artistItem;
            

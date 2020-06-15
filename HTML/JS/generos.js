@@ -30,7 +30,7 @@ window.addEventListener("load", function() {
                imagen.src = img;
                
 
-               document.querySelector('.contenido').innerHTML += '<article class="genero"> <a href = "detailgeneros.html?id='+ idGenero + ' " > <h2>' + nombre + ' </h2> </a> <img src="'+ img + '" alt="rock" class="img-genero">  </article>';
+               document.querySelector('.contenido').innerHTML += '<article class="genero"> <a href = "detailgeneros.html?id='+ idGenero + ' " > <h2>' + nombre + ' </h2> </a> <a href = "detailgeneros.html?id='+ idGenero + ' " ><img src="'+ img + '" alt="rock" class="img-genero"> </a>  </article>';
                 
 
             }
