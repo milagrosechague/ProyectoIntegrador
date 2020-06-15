@@ -3,3 +3,48 @@
     grid-template-rows: 17% 17% 17% 17% 17%;
     gap: 20px;
 }
+body{
+    background-color: rgb(46, 40, 59);
+}
+
+h1{
+    font-family: "Oswald", sans-serif;
+    text-align: center;
+    font-size: 35px;
+    background-color: rgb(26, 21, 36);
+    color: ivory;
+    margin-top: 20px;
+}
+h2{
+    font-family: "Oswald", sans-serif;
+    text-align: center;
+    background-color: rgb(26, 21, 36);
+    color: ivory;
+    border-radius: 30px;
+    
+}
+
+@media only screen and (min-width: 768px){
+    h1{
+        font-size: 60px;
+    }
+    
+    h2{
+        font-size: 40px;
+    }
+    
+}
+
+@media only screen and (min-width: 1024px){
+    h1{
+        font-size: 50px;
+        margin-top: 40px;
+    }
+
+
+    .contenido{
+        display: grid;
+        grid-template-columns: 1fr 1fr 1fr 1fr;
+        gap: 7%;
+    }
+}

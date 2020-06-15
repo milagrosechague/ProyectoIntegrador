@@ -21,7 +21,6 @@ fetch(url)
             let artista = xyz[i].name
             let img = xyz[i].picture_big
             let idArtista = xyz[i].id
-
             let detalleGenero = document.querySelector(".contenido")
             detalleGenero.innerHTML += '<article class="genero"> <a href = "detail-artista.html?id='+ idArtista + ' " > <h2>' + artista + ' </h2> </a> <img src="'+ img + '" alt="rock" class="img-genero">  </article>'
         }
