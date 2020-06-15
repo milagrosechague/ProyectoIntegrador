@@ -68,6 +68,9 @@ window.addEventListener('load', function() {
              }
 
         })
+        .catch(function(error){
+            console.log(error);
+        })
     })
 
 

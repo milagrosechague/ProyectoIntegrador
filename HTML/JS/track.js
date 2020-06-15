@@ -97,13 +97,13 @@ window.addEventListener("load", function(){
 
                         document.querySelector('.titulos-canciones').innerHTML += single;
                     }
-                }
+                })
+                .catch(function(error){
+                    console.log(error);
+                })
             
-            )
-            
-        }
-    )
-
-  
-
+        })
+        .catch(function(error){
+            console.log(error);
+        })
 })

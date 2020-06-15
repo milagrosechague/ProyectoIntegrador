@@ -16,14 +16,14 @@ fetch(url)
         console.log(dgenero);
         let xyz = dgenero.data; 
 
-        for (let i= 0; i<10; i++) {
+        for (let i= 0; i<12; i++) {
 
             let artista = xyz[i].name
+            let img = xyz[i].picture_big
+            let idArtista = xyz[i].id
 
-            let detalleGenero = document.querySelector(".detalleGenero")
-            detalleGenero.innerHTML += '<li>' + artista + '</li>'
-
-            
+            let detalleGenero = document.querySelector(".contenido")
+            detalleGenero.innerHTML += '<article class="genero"> <a href = "detail-artista.html?id='+ idArtista + ' " > <h2>' + artista + ' </h2> </a> <img src="'+ img + '" alt="rock" class="img-genero">  </article>'
         }
  
     })
