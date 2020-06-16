@@ -43,6 +43,10 @@ h1{
     padding: 15%;
 }
 
+.add i{
+    color: ivory;
+}
+
 
 
 /*seccion aparece en 1024 recien */
@@ -54,7 +58,7 @@ h1{
 i{
     font-family: "Oswald", sans-serif;
     font-size: 30px;
-    color: #000000;
+    color: ivory;
 }
 
 .titulos-canciones{

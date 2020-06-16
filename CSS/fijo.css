@@ -29,6 +29,7 @@ body{
 
 li{
     font-family: "Oswald", sans-serif;
+    color: ivory;
 }
 a { text-decoration: none;
 color: ivory;
@@ -114,7 +115,7 @@ footer{
     gap: 0px;
 }
 .redes img{
-    width: 40%;
+    width: 30%;
     margin-left: 8px;
     border-radius: 50%;
 }
@@ -139,7 +140,7 @@ footer ul{
     display: block;
     margin-top: 35px;
     border-radius: 50%;
-    width: 90%;
+    width: 45%;
 }
 
 @media only screen and (min-width: 768px){
@@ -215,10 +216,6 @@ footer ul{
         margin-top: 10px;
     }
     
-    .logo-deezer{
-       width: 60%;
-       margin-top: 15px;
-}
 }
 
 
