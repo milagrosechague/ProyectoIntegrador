@@ -1,9 +1,3 @@
-let queryString = location.search;
-let datos = new URLSearchParams (queryString);
-let idTrack= datos.get('id');
-
-let proxy = 'https://cors-anywhere.herokuapp.com/';
-let url = proxy + "https://api.deezer.com/tracks/" + idTrack
 
 let recuperoStorage = localStorage.getItem('playlist');
 
@@ -19,11 +13,11 @@ else{
 
 let playlistClass = document.querySelector('.playlistClass');
 
-playlist.forEach(function(idTrack){
-    mostrarTrack(idTrack);
+playlist.forEach(function(idTrack,index){
+    mostrarTrack(idTrack,index);
 });
 
-function mostrarTrack(idTrack){
+function mostrarTrack(idTrack,index){
     let proxy = 'https://cors-anywhere.herokuapp.com/';
     let url = proxy + "https://api.deezer.com/track/" + idTrack;
 
@@ -32,20 +26,24 @@ function mostrarTrack(idTrack){
             return response.json();
         })
      .then(function(datos) { 
-            console.log(datos.title);
-            // let resultados = datos.data;
-            
-            playlistClass.innerHTML += `<li>` + datos.title + `</li>`
-                                       `<li>` + datos.duration + `</li>`
-                                       `<li>` + datos.artist.name + `</li>`
-                                       `<li>` + datos.album + `</li>`;
-            let player = document.querySelector('iframe')
-            player.src = 'https://www.deezer.com/plugins/player?format=square&autoplay=false&playlist=false&width=300&height=300&color=007FEB&layout=&size=medium&type=tracks&id=' + idTrack + '&app_id=1'
+               console.log(datos);
+            let resultados = datos.title;
+            let duration = datos.duration
+            playlistClass.innerHTML +=  `<li> <iframe  scrolling="no" frameborder="0" allowTransparency="true" src="https://www.deezer.com/plugins/player?format=square&autoplay=false&playlist=false&width=80&height=80&color=007FEB&layout=&size=small&type=playlist&id=`+ idTrack +`&app_id=1" width="80" height="80"></iframe>
+                                              ${resultados}  
+                                              ${duration}  
+                                              ${datos.artist.name}
+                                              ${datos.album}  </li>`;
+
+           //let player = document.querySelector('iframe')
+           // player.src = 'https://www.deezer.com/plugins/player?format=square&autoplay=false&playlist=false&width=80&height=80&color=007FEB&layout=&size=small&type=playlist&id=' + idTrack + '&app_id=1'
                                
-            for (let i = 0; i < 4; i++) {
-            let imagenTrack = document.querySelector('.fotosInicio');
-            imagenTrack.src = datos[i].artist.picture_medium
-            }   
+            if (index <4){
+                let imagenTrack = document.querySelector('.fotosInicio');
+                imagenTrack.innerHTML += '<img src="'+ datos.artist.picture_medium + '">'
+            }
+            
+         
                  
         })
     .catch(function(error){
@@ -53,7 +51,7 @@ function mostrarTrack(idTrack){
     })
     return playlistClass;
 }
-let datosSearch = new URLSearchParams (queryString);
+/*let datosSearch = new URLSearchParams (queryString);
 let search= datosSearch.get('search');
 
 // let proxy = 'https://cors-anywhere.herokuapp.com/';
@@ -72,4 +70,4 @@ fetch(url2)
    })
    .catch(function(error){
        console.log(error)
-   })
+   })*/
