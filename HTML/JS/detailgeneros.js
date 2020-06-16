@@ -53,7 +53,7 @@ fetch(url)
                     //console.log("es mayus")
                     artista = truncateString(artista, 12, 11);
                 }
-                }
+            }
 
             if (window.matchMedia("(min-width: 1440px)").matches) {
 
@@ -64,7 +64,7 @@ fetch(url)
                         //console.log("es mayus")
                         artista = truncateString(artista, 17, 16);
                 }
-                }
+            }
 
             let detalleGenero = document.querySelector(".contenido")
             detalleGenero.innerHTML += '<article class="genero"> <a href = "detail-artista.html?id='+ idArtista + ' " > <h2>' + artista + ' </h2> </a><a href = "detail-artista.html?id='+ idArtista + ' " > <img src="'+ img + '" alt="rock" class="img-genero"></a></article>'
