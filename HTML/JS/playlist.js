@@ -32,13 +32,13 @@ function mostrarTrack(idTrack){
             return response.json();
         })
      .then(function(datos) { 
-            console.log(datos.title);
+             //  console.log(datos.title);
             // let resultados = datos.data;
-            
             playlistClass.innerHTML += `<li>` + datos.title + `</li>`
                                        `<li>` + datos.duration + `</li>`
                                        `<li>` + datos.artist.name + `</li>`
                                        `<li>` + datos.album + `</li>`;
+
             let player = document.querySelector('iframe')
             player.src = 'https://www.deezer.com/plugins/player?format=square&autoplay=false&playlist=false&width=300&height=300&color=007FEB&layout=&size=medium&type=tracks&id=' + idTrack + '&app_id=1'
                                
