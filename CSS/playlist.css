@@ -39,15 +39,17 @@ h2{
 }
 .modos-canciones{
     display: grid;
-    grid-template-columns: 33% 33% 33%;
+    grid-template-columns: 45% 20% 25% 10%;
     text-align: center;
     border-bottom: black solid 4px;
     color: ivory;
 }
-canciones{
+.opciones{
     display: grid;
-    grid-template-rows:10% 10% 10% 10% 10% 10% 10% 10% 10% 10%;
-    background-color: white;
+    grid-template-columns: 15% 32% 19% 26% 3%;
+    background-color: rgb(26, 21, 36);
+
+
 }
 .opciones-canciones{
     display: grid;

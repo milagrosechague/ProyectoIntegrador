@@ -29,15 +29,17 @@ function mostrarTrack(idTrack,index){
                console.log(datos);
             let resultados = datos.title;
             let duration = datos.duration
-            playlistClass.innerHTML +=  `<li> <iframe  scrolling="no" frameborder="0" allowTransparency="true" src="https://www.deezer.com/plugins/player?format=square&autoplay=false&playlist=false&width=80&height=80&color=007FEB&layout=&size=small&type=playlist&id=`+ idTrack +`&app_id=1" width="80" height="80"></iframe>
-                                              ${resultados}  
-                                              ${duration}  
-                                              ${datos.artist.name}
-                                              ${datos.album}  </li>`;
+            playlistClass.innerHTML +=  `<li class="opciones"> <iframe  scrolling="no" frameborder="0" allowTransparency="true" src="https://www.deezer.com/plugins/player?format=square&autoplay=false&playlist=false&width=80&height=80&color=007FEB&layout=&size=small&type=playlist&id=`+ idTrack +`&app_id=1" width="80" height="80"></iframe>
+                                             <p> ${resultados} </p>
+                                             <p> ${datos.artist.name} </p>
+                                             <p> ${datos.album.title} </p>
+                                             <p> ${minutos} : ${seconds} </p> </li>`;
+            let minutos = duration/60
+            minutos = Math.floor(minutos)
+            let seconds = duration %60
+            if(seconds<10){ seconds = '0' + seconds }
 
-           //let player = document.querySelector('iframe')
-           // player.src = 'https://www.deezer.com/plugins/player?format=square&autoplay=false&playlist=false&width=80&height=80&color=007FEB&layout=&size=small&type=playlist&id=' + idTrack + '&app_id=1'
-                               
+          
             if (index <4){
                 let imagenTrack = document.querySelector('.fotosInicio');
                 imagenTrack.innerHTML += '<img src="'+ datos.artist.picture_medium + '">'
