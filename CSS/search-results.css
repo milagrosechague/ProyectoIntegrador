@@ -6,6 +6,13 @@ p{
     color: ivory;
 }
 
+.boton{
+    background-color: rgb(26, 21, 36);
+    margin-top: 20px;
+    margin-bottom: 20px;
+    text-align: center;
+}
+
 .headings{
     display: none;
 }
@@ -17,79 +24,80 @@ p{
 .duracion{
     display: none;
 }
- .album{
-     display: none;
- }
+.album{
+    display: none;
+}
 
- .track-info{
-     width: 90%;
-     display: grid;
-     grid-template-columns: 70% 30%;
-     gap: 0px;
-     
- }
+.track-info{
+    width: 90%;
+    display: grid;
+    grid-template-columns: 70% 30%;
+    gap: 0px;
+}
 
- .track{
+.track{
     border-bottom: 3px solid ivory;
- }
- @media only screen and (min-width: 768px){
-    
+}
+@media only screen and (min-width: 768px){
     .headings{
-         display: grid;
-         grid-template-columns: 45% 20% 25% 10%;
-         justify-content: center;
-         align-items: center;
+        display: grid;
+        grid-template-columns: 45% 20% 25% 10%;
+        justify-content: center;
+        align-items: center;
 
-     }
+    }
 
-     .headings h3{
-         background-color: rgb(26, 21, 36);
-         color: ivory;
-         font-size: 30px;
-     }
+    .headings h3{
+        background-color: rgb(26, 21, 36);
+        color: ivory;
+        font-size: 30px;
+    }
 
-     .dur{
-         padding-left: 35px;
-     }
-     .duracion{
-         display: block;
-         padding-left: 60px;
-     }
-     .album{
-         display: block;
-     }
-     .track-info{
-         display: grid;
-         grid-template-columns: 47% 19% 26% 3%;
-         justify-content: center;
-         gap: 10px;
-       
-     }
+    .dur{
+        padding-left: 35px;
+    }
+    .duracion{
+        display: block;
+        padding-left: 60px;
+    }
+    .album{
+        display: block;
+    }
+    .track-info{
+        display: grid;
+        grid-template-columns: 47% 19% 26% 3%;
+        justify-content: center;
+        gap: 10px;  
+    }
  }
 
  @media only screen and (min-width: 1024px){
-     .img-container{
+    .img-container{
          display: block;
-     }
-     .track-img{
+    }
+    .track-img{
         border-radius: 100px;
         border: 2px solid rgb(81, 185, 226);
         width: 90%;
-     }
-
-     .track-item{
-         display: grid;
-         grid-template-columns: 5% 90%;
-         gap: 0px;
-         align-items: center;
-     }
-
-     .ul {
-        display: grid;
-        grid-template-rows: 90px 95%;
     }
 
-     .track-info{
+    .track-item{
+        display: grid;
+        grid-template-columns: 5% 90%;
+        gap: 0px;
+        align-items: center;
+    }
+
+    .boton{
+        font-size: 30px;
+    }
+
+    .ul{
+       display: grid;
+       grid-template-rows: 90px 95%;
+    }
+
+    .track-info{
         width: 100%;
         display: grid;
         grid-template-columns: 5% 39% 21% 23% 10%;
