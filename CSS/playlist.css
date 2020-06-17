@@ -56,6 +56,9 @@ h2{
 .fotosInicio{
     display: none;
 }
+.fotosInicio img {
+    width: 100%;
+}
 .opciones-canciones{
     display: grid;
     align-items: center;
@@ -103,7 +106,8 @@ iframe{
         grid-template-columns: 50% 50%;
         grid-template-rows: 50% 50%;
         margin: 20px;
-        padding: 5px;
+        width: 60%;
+        padding-left: 115px;
     }
     .foto4{
         width: 100%;
@@ -128,6 +132,9 @@ iframe{
         grid-template-columns: 11% 30% 31% 28%;
         text-align: center;
         background-color: rgb(26, 21, 36);
+    }
+    iframe{
+        width: 80;
     }
     .album{
         display: grid;
@@ -166,7 +173,7 @@ iframe{
         grid-template-columns: 50% 50%;
         grid-template-rows: 50% 50%;
         margin: 20px;
-        padding: 5px;
+        width: 100%;
     }
     .foto4{
         width: 100%;
@@ -218,3 +225,8 @@ iframe{
         display: block;
     }
 }    
+@media only screen and (min-width: 1040px){
+    .fotosInicio img{
+        width: 100%;
+    }
+}
