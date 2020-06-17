@@ -39,17 +39,19 @@ h2{
 }
 .modos-canciones{
     display: grid;
-    grid-template-columns: 45% 20% 25% 10%;
+    grid-template-columns: 38% 20% 25% 10%;
     text-align: center;
     border-bottom: black solid 4px;
     color: ivory;
 }
+.playlistClass{
+    padding-left: 0px;
+}
 .opciones{
     display: grid;
-    grid-template-columns: 15% 32% 19% 26% 3%;
+    grid-template-columns: 9% 34% 24% 20% 10%;
+    text-align: center;
     background-color: rgb(26, 21, 36);
-
-
 }
 .opciones-canciones{
     display: grid;
@@ -129,6 +131,12 @@ strong{
     .shuffle-mode{
         font-size: 30px;
     }
+    .opciones{
+        display: grid;
+        grid-template-columns: 11% 34% 24% 20% 10%;
+        text-align: center;
+        background-color: rgb(26, 21, 36);
+    }
     strong{
         font-size: 30px;
     }
@@ -167,6 +175,12 @@ strong{
     }
     .shuffle-mode{
         font-size: 50px;
+    }
+    .opciones{
+        display: grid;
+        grid-template-columns: 9% 34% 24% 20% 10%;
+        text-align: center;
+        background-color: rgb(26, 21, 36);
     }
     .canciones{
         display: grid;
