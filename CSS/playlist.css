@@ -46,9 +46,9 @@ h2{
 }
 .opciones{
     display: grid;
-    grid-template-columns: 47% 19% 26% 3%;
+    grid-template-columns: 15% 32% 19% 26% 3%;
     background-color: rgb(26, 21, 36);
-    
+
 
 }
 .opciones-canciones{

@@ -30,10 +30,10 @@ function mostrarTrack(idTrack,index){
             let resultados = datos.title;
             let duration = datos.duration
             playlistClass.innerHTML +=  `<li class="opciones"> <iframe  scrolling="no" frameborder="0" allowTransparency="true" src="https://www.deezer.com/plugins/player?format=square&autoplay=false&playlist=false&width=80&height=80&color=007FEB&layout=&size=small&type=playlist&id=`+ idTrack +`&app_id=1" width="80" height="80"></iframe>
-                                              ${resultados}
-                                              ${datos.artist.name}
-                                              ${datos.album} 
-                                              ${duration} </li>`;
+                                             <p> ${resultados} </p>
+                                             <p> ${datos.artist.name} </p>
+                                             <p> ${datos.album.title} </p>
+                                             <p> ${minutos} : ${seconds} </p> </li>`;
             let minutos = duration/60
             minutos = Math.floor(minutos)
             let seconds = duration %60
