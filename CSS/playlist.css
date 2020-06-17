@@ -134,7 +134,7 @@ iframe{
         background-color: rgb(26, 21, 36);
     }
     iframe{
-        width: 80;
+        width: 80px;
     }
     .album{
         display: grid;
