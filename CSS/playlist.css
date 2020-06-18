@@ -63,15 +63,7 @@ h2{
     color: ivory;
     font-family: "Oswald", sans-serif;
 }
-.opciones-canciones3{
-    display: grid;
-    align-items: center;
-    margin-bottom: 25px;
-    color: ivory;
-    background-color: rgb(26, 21, 36);
-    font-size: 40px;
-    font-family: "Oswald", sans-serif;
-}
+
 .add-song{
     margin-left: 20px;
     margin-right: 20px;
@@ -80,14 +72,7 @@ h2{
     background-color: rgb(26, 21, 36);
     color: ivory;
 }   
-.shuffle-mode{
-    margin-left: 20px;
-    margin-right: 20px;
-    font-family: "Oswald", sans-serif;
-    text-align: center;
-    background-color: rgb(26, 21, 36);
-    color: ivory;
-}
+
 .primer-img{
     width: 100%;
     height: 100%;
@@ -104,12 +89,12 @@ strong{
     text-align: center;
     color: ivory;
 }
+iframe{
+    width: 100%;
+}
 
 @media only screen and (min-width: 768px){
-    .fotos-inicio{
-        display: grid;
-        margin: 30px;
-    }
+
     .buscador{
         font-size: 30px;
     }
@@ -133,14 +118,11 @@ strong{
     .add-song{
         font-size: 30px;
     }
-    .shuffle-mode{
-        font-size: 30px;
-    }
-}
-.modos-canciones{
+    
+    .modos-canciones{
     display: grid;
     grid-template-columns: 45% 25% 29%;
-}
+    }
     .opciones{
         display: grid;
         grid-template-columns: 11% 30% 31% 28%;
@@ -153,18 +135,14 @@ strong{
     .album2{
         display: grid;
     }
-    .minutos{
-        display: none;
-    }
-    .tiempo{
-        display: none;
-    }
+    
     strong{
         font-size: 30px;
     }
 
     .estilo{
         font-size: 20px;
+    }
 }
 
 @media only screen and (min-width: 1024px){
@@ -215,7 +193,7 @@ strong{
         background-color: rgb(26, 21, 36);
     }
     .canciones{
-        display: grid;
+        display: block;
     }
     .modos-canciones{
         display: grid;
@@ -228,15 +206,15 @@ strong{
         text-align: center;  
     }
     .album2{
-        display: grid;
+        display: block;
     }
     strong{
         font-size: 30px;
     }
+    .minutos{
+        display: block;
+    }
+    .tiempo{
+        display: block;
+    }
 }    
-.minutos{
-    display: grid;
-}
-.tiempo{
-    display:grid;
-}
