@@ -5,11 +5,9 @@ window.addEventListener("load", function() {
     let idArtist = datos.get('id');
 
     fetch("https://cors-anywhere.herokuapp.com/https://api.deezer.com/album/" + idArtist)
-    .then(
-        function(response){
+    .then( function(response){
             return response.json();
-        }
-    )
+    })
     .then(
         function(info){
             console.log(info);

@@ -31,14 +31,10 @@ function showSlides(n) {
 window.addEventListener("load", function() {
 
     fetch("https://cors-anywhere.herokuapp.com/https://api.deezer.com/chart")
-    .then(
-        function(response){
+    .then( function(response){
             return response.json();
-        }
-    )
-
-    .then(
-        function (info){
+        })
+    .then(function (info){
                
             let trackList = info.tracks.data
 

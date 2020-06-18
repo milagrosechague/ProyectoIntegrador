@@ -4,10 +4,12 @@ const spinner = document.getElementById("spinner");
          spinner.className = "show";
          setTimeout(() => {
          spinner.className = spinner.className.replace("show", "");
-        }, 5000);
+        }, 15000);
     }
 
-
+    function hideSpinner() {
+        spinner.className = spinner.className.replace("show", "");
+         }
 
 window.addEventListener('load', function() {
 
@@ -32,6 +34,8 @@ window.addEventListener('load', function() {
     })
     .then(function(info) {
         console.log(info)
+
+        hideSpinner()
 
         let TracksArray = info.data
         for (let i=0; i<TracksArray.length; i++){

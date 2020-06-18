@@ -25,11 +25,9 @@ window.addEventListener("load", function() {
             let top = info.tracklist;
             let url = "https://cors-anywhere.herokuapp.com/" + top;
             fetch(url)
-               .then(
-                 function(response){
+               .then(function(response){
                        return response.json();
-                 }
-                )
+                 })
                 .then(
                  function(info){
                      let topTracks = info.data
