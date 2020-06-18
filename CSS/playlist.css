@@ -159,7 +159,7 @@ iframe{
     }
     .opciones-laptop{
         display: grid;
-        grid-template-rows: 33% 33% 33%;
+        grid-template-rows: 33% 33%;
     }
     .buscador{
         font-size: 40px;
@@ -228,5 +228,21 @@ iframe{
 @media only screen and (min-width: 1040px){
     .fotosInicio img{
         width: 100%;
+    }
+}
+@media only screen and (min-width: 1690px){
+    strong{
+        font-size: 65px;
+    }
+    .opcionesCanciones{
+        font-size: 80px;
+    }
+    .add-song{
+        display: block;
+        font-size: 60px;
+        text-align: center;
+    }
+    .opciones-canciones{
+        display: block;
     }
 }
