@@ -34,11 +34,13 @@ function mostrarTrack(idTrack,index){
             let seconds = duration %60
             if(seconds<10){ seconds = '0' + seconds }
 
+            let idArtista = datos.artist.id
+            let idAlbum = datos.album.id
 
             playlistClass.innerHTML +=  `<li class="opciones"> <iframe  scrolling="no" frameborder="0" allowTransparency="true" src="https://www.deezer.com/plugins/player?format=square&autoplay=false&playlist=false&width=80&height=80&color=007FEB&layout=&size=small&type=playlist&id=`+ idTrack +`&app_id=1" width="80" height="80"></iframe>
-                                             <a><p> ${resultados} </p></a>
-                                             <a><p> ${datos.artist.name} </p></a>
-                                             <p class= "album"> ${datos.album.title} </p>
+                                             <a href="track.html?id= ${idTrack}"><p> ${resultados} </p></a>
+                                             <a href="detail-artista.html?id= ${idArtista}"><p> ${datos.artist.name} </p></a>
+                                             <a href="detail-album.html?id= ${idAlbum}"><p class= "album"> ${datos.album.title} </p></a>
                                              <p class= "minutos"> ${minutos} : ${seconds} </p> </li>`;
             if (index <4){
                 let imagenTrack = document.querySelector('.fotosInicio');

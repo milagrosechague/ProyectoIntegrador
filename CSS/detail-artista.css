@@ -168,3 +168,22 @@ i{
         grid-template-columns: 20% 70%;
     }
 }
+
+@media only screen and (min-width: 2560px){
+h1 {
+    font-size: 101px;
+    margin-bottom: 0px;
+}
+.info-artista li {
+    font-size: 80px;
+}
+h2 b {
+    font-size: 90px;
+}
+.titulo p {
+    font-size: 61px;
+}
+i {
+    font-size: 50px;
+}
+}

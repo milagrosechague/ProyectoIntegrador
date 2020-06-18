@@ -92,11 +92,6 @@ p{
         font-size: 30px;
     }
 
-    .ul{
-       display: grid;
-       grid-template-rows: 90px 95%;
-    }
-
     .track-info{
         width: 100%;
         display: grid;
@@ -106,6 +101,12 @@ p{
     }
    
  }
+ @media only screen and (min-width: 2560px){
+ .headings h3 {
+    font-size: 85px;
+}
+
+}
 
 
 

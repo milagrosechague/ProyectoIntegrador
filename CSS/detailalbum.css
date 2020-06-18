@@ -134,3 +134,19 @@ i{
         gap: 20px;
     }
 }
+@media only screen and (min-width: 2560px){
+h1 {
+    font-size: 90px;
+}
+.info-artista li {
+    font-size: 70px;
+}
+h2 b {
+    font-size: 80px;
+}
+p {
+    font-family: "Oswald", sans-serif;
+    font-size: 55px;
+    color: ivory;
+}
+}

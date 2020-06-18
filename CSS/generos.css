@@ -63,3 +63,12 @@ h2{
         gap: 20px;
     }
 }
+
+@media only screen and (min-width: 1024px){
+    h1 {
+        font-size: 110px;
+    }
+    .genero h2{
+        font-size: 80px;
+    }
+}

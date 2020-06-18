@@ -11,6 +11,15 @@ const spinner = document.getElementById("spinner");
 
 window.addEventListener('load', function() {
 
+    function truncateString(str, num, add) {
+                    
+        if (str.length <= num) {
+          return str
+        }
+        
+        return str.slice(0, add) + '...'
+    }
+
     showSpinner()
 
     let queryString = new URLSearchParams(location.search)
@@ -42,6 +51,17 @@ window.addEventListener('load', function() {
             let seconds = trackDur %60
             if(seconds<10){ seconds = '0' + seconds }
 
+            if (window.matchMedia("(min-width: 2560px)").matches) {
+
+                if (trackAlbum != trackAlbum.toUpperCase()){
+                    console.log("es minis");
+                    trackAlbum = truncateString(trackAlbum, 16, 15);
+                } else if (trackAlbum == trackAlbum.toUpperCase()) {
+                    console.log("es mayus")
+                    trackAlbum = truncateString(trackAlbum, 15, 14);
+                }
+            }    
+
             document.querySelector('.track-container').innerHTML += 
             `<article class="track-info"><div class="img-container">` + img + `</div>
             <a href="track.html?id=`+ idTrack + `" class="title"><p>` + trackTitle + `</p></a>
@@ -60,6 +80,7 @@ window.addEventListener('load', function() {
                     this.style.backgroundColor= 'rgba(230, 148, 40, 0.000)';
                 })
             })
+        
             
         }
       
@@ -100,6 +121,17 @@ window.addEventListener('load', function() {
                             let seconds = trackDur %60
                             if(seconds<10){ seconds = '0' + seconds }
 
+                            if (window.matchMedia("(min-width: 2560px)").matches) {
+
+                                if (trackAlbum != trackAlbum.toUpperCase()){
+                                    console.log("es minis");
+                                    trackAlbum = truncateString(trackAlbum, 16, 15);
+                                } else if (trackAlbum == trackAlbum.toUpperCase()) {
+                                    console.log("es mayus")
+                                    trackAlbum = truncateString(trackAlbum, 15, 14);
+                                }
+                            }
+                
                             document.querySelector('.track-container').innerHTML += 
                             `<article class="track-info"><div class="img-container">` + img + `</div>
                             <a href="track.html?id=`+ idTrack + `" class="title"><p>` + trackTitle + `</p></a>
@@ -117,6 +149,7 @@ window.addEventListener('load', function() {
                                      this.style.backgroundColor= 'rgba(230, 148, 40, 0.000)';
                                 })
                             })
+                            
                         }
                     } else {
                         document.querySelector('.botones').innerHTML = '';

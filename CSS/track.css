@@ -152,3 +152,19 @@ i{
 }
 }
 
+@media only screen and (min-width: 2560px){
+    h1 {
+        font-size: 90px;
+    }
+    .info p {
+        font-size: 60px;
+    }
+
+    i {
+        font-size: 75px;
+    }
+    .titulos-canciones .titulo {
+        font-size: 60px;
+    }
+}
+
