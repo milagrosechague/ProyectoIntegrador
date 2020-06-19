@@ -48,6 +48,6 @@ if (recuperoStorage == null || recuperoStorage =='[]'){
         .catch(function(error){
             console.log(error);
         })
-        return playlistClass;
+       
     }
 }
