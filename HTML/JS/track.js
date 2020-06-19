@@ -61,11 +61,11 @@ window.addEventListener("load", function(){
 
                     if (localStorage.getItem("playlist") != null) {
                     
-                        //arrayDeGifsFavoritos y le voy a agregar el código el GIF
-                    arrayPlaylist = localStorage.getItem("playlist").split(",")
-                    if (arrayPlaylist.includes("" + idTrack) != true) {
+                        //arrayDeTracksFavoritos y le voy a agregar el código el Track
+                     arrayPlaylist = localStorage.getItem("playlist").split(",")
+                     if (arrayPlaylist.includes("" + idTrack) != true) {
                         arrayPlaylist.push(idTrack)
-                    }
+                     }
 
                     } else {
                     //TENGO QUE CREAR UN ARRAY NUEVO CON EL CODIGO DEL GIF
