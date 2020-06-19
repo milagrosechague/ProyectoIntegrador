@@ -29,42 +29,74 @@ window.addEventListener("load", function(){
             let idArtista = info.artist.id
             document.querySelector('.artist').innerHTML = '<a href="detail-artista.html?id=' + idArtista + '">'+ artista + '</a>';
             document.querySelector('.mas').innerHTML = 'Mas Canciones de '+ artista;
+
+            let estado = true
+            
+            let arrayPlaylist;
           
-            //Recupero datos del storage
-            let recuperoStorage = localStorage.getItem('playlist');
+            if (localStorage.getItem("playlist") != null) {
+                arrayPlaylist = localStorage.getItem("playlist").split(",");
+                if (arrayPlaylist.includes("" + idTrack) == true) {
 
-            //Si todavia no tengo tracks en mi playlist
-            if(recuperoStorage == null){
-                    playlist = [];
-
-            }else {
-                playlist = JSON.parse(recuperoStorage);
-                //recupero el array del local storage
+                    document.querySelector('.add').innerHTML += `
+                    <i class="fas fa-music">-</i>
+                    `
+                    estado = false;
+                } else {
+                    document.querySelector('.add').innerHTML += `
+                    <i class="fas fa-music">+</i>
+                    `
+                    estado = true;
+                }
+            } else {
+                document.querySelector('.add').innerHTML += `
+                <i class="fas fa-music">+</i>
+                `
+                estado = true;
             }
-           
-            let agregar = document.querySelector('i');
 
-            agregar.addEventListener('click', function(){
+            if (estado == true) {
+                document.querySelector(".add").addEventListener("click", function() {
+                    document.querySelector('i').innerHTML = "-";
+
+                    if (localStorage.getItem("playlist") != null) {
+                    
+                        //arrayDeGifsFavoritos y le voy a agregar el código el GIF
+                    arrayPlaylist = localStorage.getItem("playlist").split(",")
+                    if (arrayPlaylist.includes("" + idTrack) != true) {
+                        arrayPlaylist.push(idTrack)
+                    }
+
+                    } else {
+                    //TENGO QUE CREAR UN ARRAY NUEVO CON EL CODIGO DEL GIF
+                     arrayPlaylist = []
+                     arrayPlaylist.push(idTrack)
+                }
                 
-                //Si ya esta en la playlist cambio el simbolo
-              if (playlist.includes(idTrack)){
+                localStorage.setItem("playlist", arrayPlaylist);
+            
+                })
+            } else {
 
-                let indiceArray = playlist.indexOf(idTrack);
-                playlist.splice(indiceArray, 1);
-                document.querySelector('i').innerHTML= '+';
-               // console.log(playlist);
-             
-            }else{
-                playlist.push(idTrack);
-                document.querySelector('i').innerHTML= '-'
+                console.log(arrayPlaylist)
+
+                let remove = document.querySelector('.add');
+
+                remove.addEventListener('click', function() {
+
+                    for (let i = 0; i < arrayPlaylist.length; i++) {
+                        if(arrayPlaylist[i] == idTrack) {
+                            arrayPlaylist.splice(i, 1);
+                        }
+                    }
+
+                    document.querySelector('.add i').innerHTML = "+";
+
+                    console.log(arrayPlaylist);
+                    localStorage.setItem("playlist", arrayPlaylist);
+                })
             }
-        
-            //guardando lista en local storage
-            let playlistStorage = JSON.stringify(playlist);
-            localStorage.setItem('playlist', playlistStorage);
-
-            console.log(playlistEnStorge);
-            });
+            
 
             //seccion canciones de artista
 
